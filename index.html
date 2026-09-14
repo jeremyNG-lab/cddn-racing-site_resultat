@@ -629,6 +629,12 @@
   }
   .cp-dnf-pill { gap: 0.35rem; min-width: 8.6rem; }
   .cp-dnf-delta { font-size: 0.65rem; font-weight: 400; color: var(--ink-3); }
+  .cp-source-real {
+    display: inline-block; font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 0.6rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--accent); background: color-mix(in oklab, var(--accent) 14%, var(--bg-tile));
+    border-radius: 4px; padding: 0.05rem 0.32rem; margin-left: 0.3rem; vertical-align: middle;
+  }
   .cp-table tr.low-n > td, .data-table tr.low-n > td { opacity: 0.62; }
   .catperf-note { margin: 0.55rem 0 0; font-size: 0.72rem; color: var(--ink-3); }
 
@@ -851,7 +857,7 @@
     <a href="#donnees" data-page="page-donnees">Données brutes</a>
     <a href="#externe" data-page="page-externe">Suivi externe</a>
   </nav>
-  <div class="sync"><span class="dot"></span> Synchronisé — 14 septembre 2026, 09:17</div>
+  <div class="sync"><span class="dot"></span> Synchronisé — 14 septembre 2026, 09:26</div>
 </div>
 
 <div class="shell">
@@ -1223,55 +1229,86 @@
             <tbody>
               <tr>
                 <td>BarcelonaELMS</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 6%, var(--bg-tile));" title="Ismael Boumaza, BarcelonaELMS (LMP2_ELMS) : écart de rythme +0,0 % vs équipe (n=43).">+0,0 %</span> <span class="hm-n">n=43</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 6%, var(--bg-tile));" title="Ismael Boumaza, BarcelonaELMS (LMP2_ELMS) : écart de rythme +0,0 % vs équipe (n=43) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">+0,0 %</span> <span class="hm-n">n=43</span></td>
               </tr>
               <tr>
                 <td>SilverstoneELMS</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 6%, var(--bg-tile));" title="Ismael Boumaza, SilverstoneELMS (LMP2_ELMS) : écart de rythme -0,3 % vs équipe (n=26).">-0,3 %</span> <span class="hm-n">n=26</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 6%, var(--bg-tile));" title="Ismael Boumaza, SilverstoneELMS (LMP2_ELMS) : écart de rythme -0,3 % vs équipe (n=26) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">-0,3 %</span> <span class="hm-n">n=26</span></td>
               </tr>
               <tr>
                 <td>FujiWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 34%, var(--bg-tile));" title="Ismael Boumaza, FujiWEC (LMP2_ELMS) : écart de rythme -1,9 % vs équipe (n=17).">-1,9 %</span> <span class="hm-n">n=17</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 34%, var(--bg-tile));" title="Ismael Boumaza, FujiWEC (LMP2_ELMS) : écart de rythme -1,9 % vs équipe (n=17) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">-1,9 %</span> <span class="hm-n">n=17</span></td>
               </tr>
               <tr>
                 <td>InterlagosWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 18%, var(--bg-tile));" title="Ismael Boumaza, InterlagosWEC (LMP2_ELMS) : écart de rythme +1,0 % vs équipe (n=17).">+1,0 %</span> <span class="hm-n">n=17</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 18%, var(--bg-tile));" title="Ismael Boumaza, InterlagosWEC (LMP2_ELMS) : écart de rythme +1,0 % vs équipe (n=17) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">+1,0 %</span> <span class="hm-n">n=17</span></td>
               </tr>
               <tr>
                 <td>ImolaELMS</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 6%, var(--bg-tile));" title="Ismael Boumaza, ImolaELMS (LMP2_ELMS) : écart de rythme +0,2 % vs équipe (n=11).">+0,2 %</span> <span class="hm-n">n=11</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 6%, var(--bg-tile));" title="Ismael Boumaza, ImolaELMS (LMP2_ELMS) : écart de rythme +0,2 % vs équipe (n=11) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">+0,2 %</span> <span class="hm-n">n=11</span></td>
               </tr>
               <tr>
                 <td>QatarWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 6%, var(--bg-tile));" title="Ismael Boumaza, QatarWEC (LMP2_ELMS) : écart de rythme -0,2 % vs équipe (n=9).">-0,2 %</span> <span class="hm-n">n=9</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 6%, var(--bg-tile));" title="Ismael Boumaza, QatarWEC (LMP2_ELMS) : écart de rythme -0,2 % vs équipe (n=9) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">-0,2 %</span> <span class="hm-n">n=9</span></td>
               </tr>
               <tr>
                 <td>SpaWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 29%, var(--bg-tile));" title="Ismael Boumaza, SpaWEC (LMP2_ELMS) : écart de rythme -1,6 % vs équipe (n=9).">-1,6 %</span> <span class="hm-n">n=9</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 29%, var(--bg-tile));" title="Ismael Boumaza, SpaWEC (LMP2_ELMS) : écart de rythme -1,6 % vs équipe (n=9) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">-1,6 %</span> <span class="hm-n">n=9</span></td>
               </tr>
               <tr>
                 <td>BahrainWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 6%, var(--bg-tile));" title="Ismael Boumaza, BahrainWEC (LMP2_ELMS) : écart de rythme +0,3 % vs équipe (n=8).">+0,3 %</span> <span class="hm-n">n=8</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 6%, var(--bg-tile));" title="Ismael Boumaza, BahrainWEC (LMP2_ELMS) : écart de rythme +0,3 % vs équipe (n=8) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">+0,3 %</span> <span class="hm-n">n=8</span></td>
               </tr>
               <tr>
                 <td>SpaELMS</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 6%, var(--bg-tile));" title="Ismael Boumaza, SpaELMS (LMP2_ELMS) : écart de rythme -0,3 % vs équipe (n=7).">-0,3 %</span> <span class="hm-n">n=7</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 6%, var(--bg-tile));" title="Ismael Boumaza, SpaELMS (LMP2_ELMS) : écart de rythme -0,3 % vs équipe (n=7) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">-0,3 %</span> <span class="hm-n">n=7</span></td>
               </tr>
               <tr class="low-n">
                 <td>CotAWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 20%, var(--bg-tile));" title="Ismael Boumaza, CotAWEC (LMP2_ELMS) : écart de rythme -1,1 % vs équipe (n=4).">-1,1 %</span> <span class="hm-n">n=4</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 20%, var(--bg-tile));" title="Ismael Boumaza, CotAWEC (LMP2_ELMS) : écart de rythme -1,1 % vs équipe (n=4) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">-1,1 %</span> <span class="hm-n">n=4</span></td>
               </tr>
               <tr class="low-n">
                 <td>MonzaWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 7%, var(--bg-tile));" title="Ismael Boumaza, MonzaWEC (LMP2_ELMS) : écart de rythme +0,4 % vs équipe (n=3).">+0,4 %</span> <span class="hm-n">n=3</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 7%, var(--bg-tile));" title="Ismael Boumaza, MonzaWEC (LMP2_ELMS) : écart de rythme +0,4 % vs équipe (n=3) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">+0,4 %</span> <span class="hm-n">n=3</span></td>
               </tr>
               <tr class="low-n">
                 <td>SebringWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 62%, var(--bg-tile));" title="Ismael Boumaza, SebringWEC (LMP2_ELMS) : écart de rythme -8,8 % vs équipe (n=3).">-8,8 %</span> <span class="hm-n">n=3</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 62%, var(--bg-tile));" title="Ismael Boumaza, SebringWEC (LMP2_ELMS) : écart de rythme -8,8 % vs équipe (n=3) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">-8,8 %</span> <span class="hm-n">n=3</span></td>
               </tr>
             </tbody>
           </table>
         </div>
+        <p class="catperf-note">« réel » = rythme calculé sur la moyenne des tours propres de course (race_laps.json) plutôt que sur le seul tour de pointe — voir « Écart meilleur tour vs rythme de course » ci-dessous pour l'aller plus loin.</p>
+      </div>
+      <div class="catperf">
+        <p class="catperf-head">Écart meilleur tour vs rythme de course</p>
+        <div class="table-wrap">
+          <table class="data-table cp-table">
+            <thead><tr><th>Circuit</th><th class="num">Écart vs pointe</th></tr></thead>
+            <tbody>
+              <tr class="low-n">
+                <td>DaytonaRC <span class="hm-n">LMP2</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 48%, var(--bg-tile));" title="Ismael Boumaza, DaytonaRC (LMP2) : écart meilleur tour vs rythme de course -1,6 % (n=223 tours propres, 1 course(s)) — proche de 0 = reproduit son meilleur tour en boucle.">-1,6 %</span> <span class="hm-n">223 tours / 1 course</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="catperf-note">Rythme de course réel (moyenne des tours propres secs, race_laps.json depuis le 28 août 2026) — proche de 0 % = Ismael Boumaza reproduit son meilleur tour en boucle ; un écart fort avec un bon rythme vs équipe ci-dessus signale un problème de constance plutôt que de vitesse pure. Lignes estompées : n &lt; 10 tours propres OU n &lt; 5 courses distinctes (ex. une longue course unique ne suffit pas, même à volume de tours élevé).</p>
+      </div>
+      <div class="catperf">
+        <p class="catperf-head">Régularité par circuit</p>
+        <div class="table-wrap">
+          <table class="data-table cp-table">
+            <thead><tr><th>Circuit</th><th class="num">Coefficient de variation</th></tr></thead>
+            <tbody>
+              <tr class="low-n">
+                <td>DaytonaRC <span class="hm-n">LMP2</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 30%, var(--bg-tile));" title="Ismael Boumaza, DaytonaRC (LMP2) : coefficient de variation 1,01 % (n=223 tours propres, 1 course(s)) — plus bas = plus régulier tour après tour.">1,01 %</span> <span class="hm-n">223 tours / 1 course</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="catperf-note">Écart-type des tours propres / rythme moyen — plus bas = plus régulier tour après tour, un levier directement actionnable contrairement au chrono brut. Lignes estompées : n &lt; 10 tours propres OU n &lt; 5 courses distinctes (ex. une longue course unique ne suffit pas, même à volume de tours élevé).</p>
       </div>
       <div class="catperf">
         <p class="catperf-head">Temps au tour par circuit</p>
@@ -1525,67 +1562,72 @@
             <tbody>
               <tr>
                 <td>BarcelonaELMS</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 18%, var(--bg-tile));" title="Zac Marzak, BarcelonaELMS (GT3) : écart de rythme +1,0 % vs équipe (n=62).">+1,0 %</span> <span class="hm-n">n=62</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 18%, var(--bg-tile));" title="Zac Marzak, BarcelonaELMS (GT3) : écart de rythme +1,0 % vs équipe (n=62) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">+1,0 %</span> <span class="hm-n">n=62</span></td>
               </tr>
               <tr>
                 <td>FujiWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 11%, var(--bg-tile));" title="Zac Marzak, FujiWEC (GT3) : écart de rythme -0,6 % vs équipe (n=45).">-0,6 %</span> <span class="hm-n">n=45</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 11%, var(--bg-tile));" title="Zac Marzak, FujiWEC (GT3) : écart de rythme -0,6 % vs équipe (n=45) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">-0,6 %</span> <span class="hm-n">n=45</span></td>
               </tr>
               <tr>
                 <td>ImolaELMS</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 11%, var(--bg-tile));" title="Zac Marzak, ImolaELMS (GT3) : écart de rythme -0,6 % vs équipe (n=35).">-0,6 %</span> <span class="hm-n">n=35</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 11%, var(--bg-tile));" title="Zac Marzak, ImolaELMS (GT3) : écart de rythme -0,6 % vs équipe (n=35) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">-0,6 %</span> <span class="hm-n">n=35</span></td>
               </tr>
               <tr>
                 <td>LeMansWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 6%, var(--bg-tile));" title="Zac Marzak, LeMansWEC (GT3) : écart de rythme +0,2 % vs équipe (n=33).">+0,2 %</span> <span class="hm-n">n=33</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 6%, var(--bg-tile));" title="Zac Marzak, LeMansWEC (GT3) : écart de rythme +0,2 % vs équipe (n=33) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">+0,2 %</span> <span class="hm-n">n=33</span></td>
               </tr>
               <tr>
                 <td>SebringWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 13%, var(--bg-tile));" title="Zac Marzak, SebringWEC (GT3) : écart de rythme -0,7 % vs équipe (n=22).">-0,7 %</span> <span class="hm-n">n=22</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 13%, var(--bg-tile));" title="Zac Marzak, SebringWEC (GT3) : écart de rythme -0,7 % vs équipe (n=22) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">-0,7 %</span> <span class="hm-n">n=22</span></td>
               </tr>
               <tr>
                 <td>InterlagosWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 6%, var(--bg-tile));" title="Zac Marzak, InterlagosWEC (GT3) : écart de rythme +0,1 % vs équipe (n=20).">+0,1 %</span> <span class="hm-n">n=20</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 6%, var(--bg-tile));" title="Zac Marzak, InterlagosWEC (GT3) : écart de rythme +0,1 % vs équipe (n=20) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">+0,1 %</span> <span class="hm-n">n=20</span></td>
               </tr>
               <tr>
                 <td>PaulRicard1A-V2</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 9%, var(--bg-tile));" title="Zac Marzak, PaulRicard1A-V2 (GT3) : écart de rythme +0,5 % vs équipe (n=16).">+0,5 %</span> <span class="hm-n">n=16</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 9%, var(--bg-tile));" title="Zac Marzak, PaulRicard1A-V2 (GT3) : écart de rythme +0,5 % vs équipe (n=16) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">+0,5 %</span> <span class="hm-n">n=16</span></td>
               </tr>
               <tr>
                 <td>PaulRicardELMS</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 6%, var(--bg-tile));" title="Zac Marzak, PaulRicardELMS (GT3) : écart de rythme -0,3 % vs équipe (n=12).">-0,3 %</span> <span class="hm-n">n=12</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 6%, var(--bg-tile));" title="Zac Marzak, PaulRicardELMS (GT3) : écart de rythme -0,3 % vs équipe (n=12) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">-0,3 %</span> <span class="hm-n">n=12</span></td>
               </tr>
               <tr>
                 <td>LeMansWEC_Mulsanne</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 38%, var(--bg-tile));" title="Zac Marzak, LeMansWEC_Mulsanne (GT3) : écart de rythme -2,1 % vs équipe (n=10).">-2,1 %</span> <span class="hm-n">n=10</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 38%, var(--bg-tile));" title="Zac Marzak, LeMansWEC_Mulsanne (GT3) : écart de rythme -2,1 % vs équipe (n=10) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">-2,1 %</span> <span class="hm-n">n=10</span></td>
               </tr>
               <tr>
                 <td>BahrainWEC_Outer</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 22%, var(--bg-tile));" title="Zac Marzak, BahrainWEC_Outer (GT3) : écart de rythme -1,2 % vs équipe (n=9).">-1,2 %</span> <span class="hm-n">n=9</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 22%, var(--bg-tile));" title="Zac Marzak, BahrainWEC_Outer (GT3) : écart de rythme -1,2 % vs équipe (n=9) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">-1,2 %</span> <span class="hm-n">n=9</span></td>
               </tr>
               <tr>
                 <td>PortimaoWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 7%, var(--bg-tile));" title="Zac Marzak, PortimaoWEC (GT3) : écart de rythme -0,4 % vs équipe (n=9).">-0,4 %</span> <span class="hm-n">n=9</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 7%, var(--bg-tile));" title="Zac Marzak, PortimaoWEC (GT3) : écart de rythme -0,4 % vs équipe (n=9) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">-0,4 %</span> <span class="hm-n">n=9</span></td>
               </tr>
               <tr>
                 <td>MonzaWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 6%, var(--bg-tile));" title="Zac Marzak, MonzaWEC (GT3) : écart de rythme -0,2 % vs équipe (n=7).">-0,2 %</span> <span class="hm-n">n=7</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 6%, var(--bg-tile));" title="Zac Marzak, MonzaWEC (GT3) : écart de rythme -0,2 % vs équipe (n=7) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">-0,2 %</span> <span class="hm-n">n=7</span></td>
               </tr>
               <tr>
                 <td>QatarWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 7%, var(--bg-tile));" title="Zac Marzak, QatarWEC (GT3) : écart de rythme +0,4 % vs équipe (n=6).">+0,4 %</span> <span class="hm-n">n=6</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 7%, var(--bg-tile));" title="Zac Marzak, QatarWEC (GT3) : écart de rythme +0,4 % vs équipe (n=6) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">+0,4 %</span> <span class="hm-n">n=6</span></td>
               </tr>
               <tr>
                 <td>SpaWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 11%, var(--bg-tile));" title="Zac Marzak, SpaWEC (GT3) : écart de rythme +0,6 % vs équipe (n=6).">+0,6 %</span> <span class="hm-n">n=6</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 11%, var(--bg-tile));" title="Zac Marzak, SpaWEC (GT3) : écart de rythme +0,6 % vs équipe (n=6) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">+0,6 %</span> <span class="hm-n">n=6</span></td>
               </tr>
               <tr class="low-n">
                 <td>ImolaWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 16%, var(--bg-tile));" title="Zac Marzak, ImolaWEC (GT3) : écart de rythme +0,9 % vs équipe (n=4).">+0,9 %</span> <span class="hm-n">n=4</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 16%, var(--bg-tile));" title="Zac Marzak, ImolaWEC (GT3) : écart de rythme +0,9 % vs équipe (n=4) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">+0,9 %</span> <span class="hm-n">n=4</span></td>
               </tr>
             </tbody>
           </table>
         </div>
+        <p class="catperf-note">« réel » = rythme calculé sur la moyenne des tours propres de course (race_laps.json) plutôt que sur le seul tour de pointe — voir « Écart meilleur tour vs rythme de course » ci-dessous pour l'aller plus loin.</p>
+      </div>
+      <div class="catperf">
+        <p class="catperf-head">Rythme de course réel</p>
+        <p class="catperf-note">Pas encore 5 tours propres enregistrés pour Zac Marzak (race_laps.json depuis le 28 août 2026 seulement) — reviendra automatiquement avec le volume.</p>
       </div>
       <div class="catperf">
         <p class="catperf-head">Temps au tour par circuit</p>
@@ -1849,79 +1891,126 @@
             <tbody>
               <tr>
                 <td>LeMansWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 14%, var(--bg-tile));" title="Melvin Even, LeMansWEC (GT3) : écart de rythme +0,8 % vs équipe (n=29).">+0,8 %</span> <span class="hm-n">n=29</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 14%, var(--bg-tile));" title="Melvin Even, LeMansWEC (GT3) : écart de rythme +0,8 % vs équipe (n=29) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">+0,8 %</span> <span class="hm-n">n=29</span></td>
               </tr>
               <tr>
                 <td>BarcelonaELMS</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 18%, var(--bg-tile));" title="Melvin Even, BarcelonaELMS (GT3) : écart de rythme +1,0 % vs équipe (n=24).">+1,0 %</span> <span class="hm-n">n=24</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 18%, var(--bg-tile));" title="Melvin Even, BarcelonaELMS (GT3) : écart de rythme +1,0 % vs équipe (n=24) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">+1,0 %</span> <span class="hm-n">n=24</span></td>
               </tr>
               <tr>
                 <td>ImolaELMS</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 11%, var(--bg-tile));" title="Melvin Even, ImolaELMS (GT3) : écart de rythme +0,6 % vs équipe (n=15).">+0,6 %</span> <span class="hm-n">n=15</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 11%, var(--bg-tile));" title="Melvin Even, ImolaELMS (GT3) : écart de rythme +0,6 % vs équipe (n=15) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">+0,6 %</span> <span class="hm-n">n=15</span></td>
               </tr>
               <tr>
                 <td>SpaWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 14%, var(--bg-tile));" title="Melvin Even, SpaWEC (GT3) : écart de rythme +0,8 % vs équipe (n=14).">+0,8 %</span> <span class="hm-n">n=14</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 14%, var(--bg-tile));" title="Melvin Even, SpaWEC (GT3) : écart de rythme +0,8 % vs équipe (n=14) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">+0,8 %</span> <span class="hm-n">n=14</span></td>
               </tr>
               <tr>
                 <td>SpaELMS</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 14%, var(--bg-tile));" title="Melvin Even, SpaELMS (GT3) : écart de rythme +0,8 % vs équipe (n=12).">+0,8 %</span> <span class="hm-n">n=12</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 14%, var(--bg-tile));" title="Melvin Even, SpaELMS (GT3) : écart de rythme +0,8 % vs équipe (n=12) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">+0,8 %</span> <span class="hm-n">n=12</span></td>
               </tr>
               <tr>
                 <td>SilverstoneELMS</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 7%, var(--bg-tile));" title="Melvin Even, SilverstoneELMS (GT3) : écart de rythme +0,4 % vs équipe (n=10).">+0,4 %</span> <span class="hm-n">n=10</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 7%, var(--bg-tile));" title="Melvin Even, SilverstoneELMS (GT3) : écart de rythme +0,4 % vs équipe (n=10) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">+0,4 %</span> <span class="hm-n">n=10</span></td>
               </tr>
               <tr>
                 <td>PaulRicardELMS</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 13%, var(--bg-tile));" title="Melvin Even, PaulRicardELMS (GT3) : écart de rythme +0,7 % vs équipe (n=9).">+0,7 %</span> <span class="hm-n">n=9</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 13%, var(--bg-tile));" title="Melvin Even, PaulRicardELMS (GT3) : écart de rythme +0,7 % vs équipe (n=9) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">+0,7 %</span> <span class="hm-n">n=9</span></td>
               </tr>
               <tr>
                 <td>InterlagosWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 13%, var(--bg-tile));" title="Melvin Even, InterlagosWEC (GT3) : écart de rythme +0,7 % vs équipe (n=8).">+0,7 %</span> <span class="hm-n">n=8</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 13%, var(--bg-tile));" title="Melvin Even, InterlagosWEC (GT3) : écart de rythme +0,7 % vs équipe (n=8) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">+0,7 %</span> <span class="hm-n">n=8</span></td>
               </tr>
               <tr>
                 <td>MonzaWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 14%, var(--bg-tile));" title="Melvin Even, MonzaWEC (GT3) : écart de rythme -0,8 % vs équipe (n=8).">-0,8 %</span> <span class="hm-n">n=8</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 14%, var(--bg-tile));" title="Melvin Even, MonzaWEC (GT3) : écart de rythme -0,8 % vs équipe (n=8) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">-0,8 %</span> <span class="hm-n">n=8</span></td>
               </tr>
               <tr>
                 <td>MonzaWEC_Grande</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 7%, var(--bg-tile));" title="Melvin Even, MonzaWEC_Grande (GT3) : écart de rythme -0,4 % vs équipe (n=8).">-0,4 %</span> <span class="hm-n">n=8</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 7%, var(--bg-tile));" title="Melvin Even, MonzaWEC_Grande (GT3) : écart de rythme -0,4 % vs équipe (n=8) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">-0,4 %</span> <span class="hm-n">n=8</span></td>
               </tr>
               <tr>
                 <td>SebringWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 6%, var(--bg-tile));" title="Melvin Even, SebringWEC (GT3) : écart de rythme +0,3 % vs équipe (n=8).">+0,3 %</span> <span class="hm-n">n=8</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 6%, var(--bg-tile));" title="Melvin Even, SebringWEC (GT3) : écart de rythme +0,3 % vs équipe (n=8) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">+0,3 %</span> <span class="hm-n">n=8</span></td>
               </tr>
               <tr>
                 <td>PortimaoWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 6%, var(--bg-tile));" title="Melvin Even, PortimaoWEC (GT3) : écart de rythme +0,3 % vs équipe (n=6).">+0,3 %</span> <span class="hm-n">n=6</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 6%, var(--bg-tile));" title="Melvin Even, PortimaoWEC (GT3) : écart de rythme +0,3 % vs équipe (n=6) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">+0,3 %</span> <span class="hm-n">n=6</span></td>
               </tr>
               <tr>
                 <td>SpaWEC_Endce</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 6%, var(--bg-tile));" title="Melvin Even, SpaWEC_Endce (GT3) : écart de rythme -0,0 % vs équipe (n=6).">-0,0 %</span> <span class="hm-n">n=6</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 6%, var(--bg-tile));" title="Melvin Even, SpaWEC_Endce (GT3) : écart de rythme -0,0 % vs équipe (n=6) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">-0,0 %</span> <span class="hm-n">n=6</span></td>
               </tr>
               <tr>
                 <td>FujiWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 13%, var(--bg-tile));" title="Melvin Even, FujiWEC (GT3) : écart de rythme +0,7 % vs équipe (n=5).">+0,7 %</span> <span class="hm-n">n=5</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 13%, var(--bg-tile));" title="Melvin Even, FujiWEC (GT3) : écart de rythme +0,7 % vs équipe (n=5) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">+0,7 %</span> <span class="hm-n">n=5</span></td>
               </tr>
               <tr class="low-n">
                 <td>PortimaoELMS</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 6%, var(--bg-tile));" title="Melvin Even, PortimaoELMS (GT3) : écart de rythme +0,1 % vs équipe (n=4).">+0,1 %</span> <span class="hm-n">n=4</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 6%, var(--bg-tile));" title="Melvin Even, PortimaoELMS (GT3) : écart de rythme +0,1 % vs équipe (n=4) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">+0,1 %</span> <span class="hm-n">n=4</span></td>
               </tr>
               <tr class="low-n">
                 <td>DaytonaRC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 6%, var(--bg-tile));" title="Melvin Even, DaytonaRC (GT3) : écart de rythme +0,1 % vs équipe (n=3).">+0,1 %</span> <span class="hm-n">n=3</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 6%, var(--bg-tile));" title="Melvin Even, DaytonaRC (GT3) : écart de rythme +0,1 % vs équipe (n=3) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">+0,1 %</span> <span class="hm-n">n=3</span></td>
               </tr>
               <tr class="low-n">
                 <td>ImolaWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 16%, var(--bg-tile));" title="Melvin Even, ImolaWEC (GT3) : écart de rythme +0,9 % vs équipe (n=3).">+0,9 %</span> <span class="hm-n">n=3</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 16%, var(--bg-tile));" title="Melvin Even, ImolaWEC (GT3) : écart de rythme +0,9 % vs équipe (n=3) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">+0,9 %</span> <span class="hm-n">n=3</span></td>
               </tr>
               <tr class="low-n">
                 <td>QatarWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 11%, var(--bg-tile));" title="Melvin Even, QatarWEC (GT3) : écart de rythme +0,6 % vs équipe (n=3).">+0,6 %</span> <span class="hm-n">n=3</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 11%, var(--bg-tile));" title="Melvin Even, QatarWEC (GT3) : écart de rythme +0,6 % vs équipe (n=3) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">+0,6 %</span> <span class="hm-n">n=3</span></td>
               </tr>
             </tbody>
           </table>
         </div>
+        <p class="catperf-note">« réel » = rythme calculé sur la moyenne des tours propres de course (race_laps.json) plutôt que sur le seul tour de pointe — voir « Écart meilleur tour vs rythme de course » ci-dessous pour l'aller plus loin.</p>
+      </div>
+      <div class="catperf">
+        <p class="catperf-head">Écart meilleur tour vs rythme de course</p>
+        <div class="table-wrap">
+          <table class="data-table cp-table">
+            <thead><tr><th>Circuit</th><th class="num">Écart vs pointe</th></tr></thead>
+            <tbody>
+              <tr>
+                <td>PaulRicardELMS <span class="hm-n">GT3</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 42%, var(--bg-tile));" title="Melvin Even, PaulRicardELMS (GT3) : écart meilleur tour vs rythme de course -1,4 % (n=54 tours propres, 5 course(s)) — proche de 0 = reproduit son meilleur tour en boucle.">-1,4 %</span> <span class="hm-n">54 tours / 5 courses</span></td>
+              </tr>
+              <tr class="low-n">
+                <td>BarcelonaELMS <span class="hm-n">GT3</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 39%, var(--bg-tile));" title="Melvin Even, BarcelonaELMS (GT3) : écart meilleur tour vs rythme de course -1,3 % (n=23 tours propres, 2 course(s)) — proche de 0 = reproduit son meilleur tour en boucle.">-1,3 %</span> <span class="hm-n">23 tours / 2 courses</span></td>
+              </tr>
+              <tr class="low-n">
+                <td>ImolaELMS <span class="hm-n">LMP2_ELMS</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 42%, var(--bg-tile));" title="Melvin Even, ImolaELMS (LMP2_ELMS) : écart meilleur tour vs rythme de course -1,4 % (n=17 tours propres, 1 course(s)) — proche de 0 = reproduit son meilleur tour en boucle.">-1,4 %</span> <span class="hm-n">17 tours / 1 course</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="catperf-note">Rythme de course réel (moyenne des tours propres secs, race_laps.json depuis le 28 août 2026) — proche de 0 % = Melvin Even reproduit son meilleur tour en boucle ; un écart fort avec un bon rythme vs équipe ci-dessus signale un problème de constance plutôt que de vitesse pure. Lignes estompées : n &lt; 10 tours propres OU n &lt; 5 courses distinctes (ex. une longue course unique ne suffit pas, même à volume de tours élevé).</p>
+      </div>
+      <div class="catperf">
+        <p class="catperf-head">Régularité par circuit</p>
+        <div class="table-wrap">
+          <table class="data-table cp-table">
+            <thead><tr><th>Circuit</th><th class="num">Coefficient de variation</th></tr></thead>
+            <tbody>
+              <tr>
+                <td>PaulRicardELMS <span class="hm-n">GT3</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 23%, var(--bg-tile));" title="Melvin Even, PaulRicardELMS (GT3) : coefficient de variation 0,78 % (n=54 tours propres, 5 course(s)) — plus bas = plus régulier tour après tour.">0,78 %</span> <span class="hm-n">54 tours / 5 courses</span></td>
+              </tr>
+              <tr class="low-n">
+                <td>BarcelonaELMS <span class="hm-n">GT3</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 19%, var(--bg-tile));" title="Melvin Even, BarcelonaELMS (GT3) : coefficient de variation 0,64 % (n=23 tours propres, 2 course(s)) — plus bas = plus régulier tour après tour.">0,64 %</span> <span class="hm-n">23 tours / 2 courses</span></td>
+              </tr>
+              <tr class="low-n">
+                <td>ImolaELMS <span class="hm-n">LMP2_ELMS</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 45%, var(--bg-tile));" title="Melvin Even, ImolaELMS (LMP2_ELMS) : coefficient de variation 1,50 % (n=17 tours propres, 1 course(s)) — plus bas = plus régulier tour après tour.">1,50 %</span> <span class="hm-n">17 tours / 1 course</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="catperf-note">Écart-type des tours propres / rythme moyen — plus bas = plus régulier tour après tour, un levier directement actionnable contrairement au chrono brut. Lignes estompées : n &lt; 10 tours propres OU n &lt; 5 courses distinctes (ex. une longue course unique ne suffit pas, même à volume de tours élevé).</p>
       </div>
       <div class="catperf">
         <p class="catperf-head">Temps au tour par circuit</p>
@@ -1958,9 +2047,9 @@
       </div>
       <div class="trend-row">
         <span class="chip good"><span class="glyph">↗</span> Progresse</span>
-        <span class="trend-detail">DNF 29,7 % → 23,7 % · rythme +0,62 % → +0,12 % (n=76 sur 3 mois)</span>
+        <span class="trend-detail">DNF 29,7 % → 23,7 % · rythme +0,63 % → +0,13 % (n=76 sur 3 mois)</span>
       </div>
-      <p class="evolution-text">Melvin Even progresse sur les 3 derniers mois : le taux de DNF/DQ passe de 29,7 % à 23,7 % (n=76) et l'écart de rythme se creuse en sa faveur, de +0,62 % à +0,12 % vs ses coéquipiers. Les deux axes s'améliorent en même temps, sur un volume suffisant.</p>
+      <p class="evolution-text">Melvin Even progresse sur les 3 derniers mois : le taux de DNF/DQ passe de 29,7 % à 23,7 % (n=76) et l'écart de rythme se creuse en sa faveur, de +0,63 % à +0,13 % vs ses coéquipiers. Les deux axes s'améliorent en même temps, sur un volume suffisant.</p>
       <div class="qc-diag">
         <p class="qc-diag-head">Qualif vs course — racecraft (GT3)</p>
         <div class="qc-metrics">
@@ -2159,43 +2248,82 @@
             <tbody>
               <tr>
                 <td>BarcelonaELMS</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 34%, var(--bg-tile));" title="Andrea Fleuriau, BarcelonaELMS (GT3) : écart de rythme -1,9 % vs équipe (n=55).">-1,9 %</span> <span class="hm-n">n=55</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 34%, var(--bg-tile));" title="Andrea Fleuriau, BarcelonaELMS (GT3) : écart de rythme -1,9 % vs équipe (n=55) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">-1,9 %</span> <span class="hm-n">n=55</span></td>
               </tr>
               <tr>
                 <td>PaulRicardELMS</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 13%, var(--bg-tile));" title="Andrea Fleuriau, PaulRicardELMS (GT3) : écart de rythme -0,7 % vs équipe (n=28).">-0,7 %</span> <span class="hm-n">n=28</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 13%, var(--bg-tile));" title="Andrea Fleuriau, PaulRicardELMS (GT3) : écart de rythme -0,7 % vs équipe (n=28) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">-0,7 %</span> <span class="hm-n">n=28</span></td>
               </tr>
               <tr>
                 <td>LeMansWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 29%, var(--bg-tile));" title="Andrea Fleuriau, LeMansWEC (GT3) : écart de rythme -1,6 % vs équipe (n=25).">-1,6 %</span> <span class="hm-n">n=25</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 29%, var(--bg-tile));" title="Andrea Fleuriau, LeMansWEC (GT3) : écart de rythme -1,6 % vs équipe (n=25) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">-1,6 %</span> <span class="hm-n">n=25</span></td>
               </tr>
               <tr>
                 <td>PaulRicard1A-V2</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 13%, var(--bg-tile));" title="Andrea Fleuriau, PaulRicard1A-V2 (GT3) : écart de rythme -0,7 % vs équipe (n=18).">-0,7 %</span> <span class="hm-n">n=18</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 13%, var(--bg-tile));" title="Andrea Fleuriau, PaulRicard1A-V2 (GT3) : écart de rythme -0,7 % vs équipe (n=18) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">-0,7 %</span> <span class="hm-n">n=18</span></td>
               </tr>
               <tr>
                 <td>SpaWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 22%, var(--bg-tile));" title="Andrea Fleuriau, SpaWEC (GT3) : écart de rythme -1,2 % vs équipe (n=11).">-1,2 %</span> <span class="hm-n">n=11</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 22%, var(--bg-tile));" title="Andrea Fleuriau, SpaWEC (GT3) : écart de rythme -1,2 % vs équipe (n=11) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">-1,2 %</span> <span class="hm-n">n=11</span></td>
               </tr>
               <tr>
                 <td>ImolaELMS</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 16%, var(--bg-tile));" title="Andrea Fleuriau, ImolaELMS (GT3) : écart de rythme -0,9 % vs équipe (n=10).">-0,9 %</span> <span class="hm-n">n=10</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 16%, var(--bg-tile));" title="Andrea Fleuriau, ImolaELMS (GT3) : écart de rythme -0,9 % vs équipe (n=10) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">-0,9 %</span> <span class="hm-n">n=10</span></td>
               </tr>
               <tr>
                 <td>SebringWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 6%, var(--bg-tile));" title="Andrea Fleuriau, SebringWEC (GT3) : écart de rythme -0,0 % vs équipe (n=8).">-0,0 %</span> <span class="hm-n">n=8</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 6%, var(--bg-tile));" title="Andrea Fleuriau, SebringWEC (GT3) : écart de rythme -0,0 % vs équipe (n=8) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">-0,0 %</span> <span class="hm-n">n=8</span></td>
               </tr>
               <tr>
                 <td>SpaELMS</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 13%, var(--bg-tile));" title="Andrea Fleuriau, SpaELMS (GT3) : écart de rythme -0,7 % vs équipe (n=8).">-0,7 %</span> <span class="hm-n">n=8</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 13%, var(--bg-tile));" title="Andrea Fleuriau, SpaELMS (GT3) : écart de rythme -0,7 % vs équipe (n=8) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">-0,7 %</span> <span class="hm-n">n=8</span></td>
               </tr>
               <tr>
                 <td>FujiWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 11%, var(--bg-tile));" title="Andrea Fleuriau, FujiWEC (GT3) : écart de rythme -0,6 % vs équipe (n=7).">-0,6 %</span> <span class="hm-n">n=7</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 11%, var(--bg-tile));" title="Andrea Fleuriau, FujiWEC (GT3) : écart de rythme -0,6 % vs équipe (n=7) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">-0,6 %</span> <span class="hm-n">n=7</span></td>
               </tr>
             </tbody>
           </table>
         </div>
+        <p class="catperf-note">« réel » = rythme calculé sur la moyenne des tours propres de course (race_laps.json) plutôt que sur le seul tour de pointe — voir « Écart meilleur tour vs rythme de course » ci-dessous pour l'aller plus loin.</p>
+      </div>
+      <div class="catperf">
+        <p class="catperf-head">Écart meilleur tour vs rythme de course</p>
+        <div class="table-wrap">
+          <table class="data-table cp-table">
+            <thead><tr><th>Circuit</th><th class="num">Écart vs pointe</th></tr></thead>
+            <tbody>
+              <tr>
+                <td>LeMansWEC <span class="hm-n">GT3</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 18%, var(--bg-tile));" title="Andrea Fleuriau, LeMansWEC (GT3) : écart meilleur tour vs rythme de course -0,6 % (n=65 tours propres, 13 course(s)) — proche de 0 = reproduit son meilleur tour en boucle.">-0,6 %</span> <span class="hm-n">65 tours / 13 courses</span></td>
+              </tr>
+              <tr class="low-n">
+                <td>BarcelonaELMS <span class="hm-n">GT3</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 39%, var(--bg-tile));" title="Andrea Fleuriau, BarcelonaELMS (GT3) : écart meilleur tour vs rythme de course -1,3 % (n=28 tours propres, 3 course(s)) — proche de 0 = reproduit son meilleur tour en boucle.">-1,3 %</span> <span class="hm-n">28 tours / 3 courses</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="catperf-note">Rythme de course réel (moyenne des tours propres secs, race_laps.json depuis le 28 août 2026) — proche de 0 % = Andrea Fleuriau reproduit son meilleur tour en boucle ; un écart fort avec un bon rythme vs équipe ci-dessus signale un problème de constance plutôt que de vitesse pure. Lignes estompées : n &lt; 10 tours propres OU n &lt; 5 courses distinctes (ex. une longue course unique ne suffit pas, même à volume de tours élevé).</p>
+      </div>
+      <div class="catperf">
+        <p class="catperf-head">Régularité par circuit</p>
+        <div class="table-wrap">
+          <table class="data-table cp-table">
+            <thead><tr><th>Circuit</th><th class="num">Coefficient de variation</th></tr></thead>
+            <tbody>
+              <tr>
+                <td>LeMansWEC <span class="hm-n">GT3</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 14%, var(--bg-tile));" title="Andrea Fleuriau, LeMansWEC (GT3) : coefficient de variation 0,45 % (n=65 tours propres, 13 course(s)) — plus bas = plus régulier tour après tour.">0,45 %</span> <span class="hm-n">65 tours / 13 courses</span></td>
+              </tr>
+              <tr class="low-n">
+                <td>BarcelonaELMS <span class="hm-n">GT3</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 23%, var(--bg-tile));" title="Andrea Fleuriau, BarcelonaELMS (GT3) : coefficient de variation 0,77 % (n=28 tours propres, 3 course(s)) — plus bas = plus régulier tour après tour.">0,77 %</span> <span class="hm-n">28 tours / 3 courses</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="catperf-note">Écart-type des tours propres / rythme moyen — plus bas = plus régulier tour après tour, un levier directement actionnable contrairement au chrono brut. Lignes estompées : n &lt; 10 tours propres OU n &lt; 5 courses distinctes (ex. une longue course unique ne suffit pas, même à volume de tours élevé).</p>
       </div>
       <div class="catperf">
         <p class="catperf-head">Temps au tour par circuit</p>
@@ -2412,47 +2540,94 @@
             <tbody>
               <tr>
                 <td>BahrainWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 11%, var(--bg-tile));" title="Jeremy Go, BahrainWEC (LMP2_ELMS) : écart de rythme -0,6 % vs équipe (n=36).">-0,6 %</span> <span class="hm-n">n=36</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 11%, var(--bg-tile));" title="Jeremy Go, BahrainWEC (LMP2_ELMS) : écart de rythme -0,6 % vs équipe (n=36) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">-0,6 %</span> <span class="hm-n">n=36</span></td>
               </tr>
               <tr>
                 <td>InterlagosWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 6%, var(--bg-tile));" title="Jeremy Go, InterlagosWEC (LMP2_ELMS) : écart de rythme -0,1 % vs équipe (n=29).">-0,1 %</span> <span class="hm-n">n=29</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 6%, var(--bg-tile));" title="Jeremy Go, InterlagosWEC (LMP2_ELMS) : écart de rythme -0,1 % vs équipe (n=29) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">-0,1 %</span> <span class="hm-n">n=29</span></td>
               </tr>
               <tr>
                 <td>LeMansWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 52%, var(--bg-tile));" title="Jeremy Go, LeMansWEC (LMP2_ELMS) : écart de rythme -2,9 % vs équipe (n=23).">-2,9 %</span> <span class="hm-n">n=23</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 52%, var(--bg-tile));" title="Jeremy Go, LeMansWEC (LMP2_ELMS) : écart de rythme -2,9 % vs équipe (n=23) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">-2,9 %</span> <span class="hm-n">n=23</span></td>
               </tr>
               <tr>
                 <td>SpaELMS</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 11%, var(--bg-tile));" title="Jeremy Go, SpaELMS (LMP2_ELMS) : écart de rythme -0,6 % vs équipe (n=15).">-0,6 %</span> <span class="hm-n">n=15</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 11%, var(--bg-tile));" title="Jeremy Go, SpaELMS (LMP2_ELMS) : écart de rythme -0,6 % vs équipe (n=15) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">-0,6 %</span> <span class="hm-n">n=15</span></td>
               </tr>
               <tr>
                 <td>QatarWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 11%, var(--bg-tile));" title="Jeremy Go, QatarWEC (LMP2_ELMS) : écart de rythme +0,6 % vs équipe (n=12).">+0,6 %</span> <span class="hm-n">n=12</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 11%, var(--bg-tile));" title="Jeremy Go, QatarWEC (LMP2_ELMS) : écart de rythme +0,6 % vs équipe (n=12) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">+0,6 %</span> <span class="hm-n">n=12</span></td>
               </tr>
               <tr>
                 <td>BarcelonaELMS</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 6%, var(--bg-tile));" title="Jeremy Go, BarcelonaELMS (LMP2_ELMS) : écart de rythme +0,1 % vs équipe (n=11).">+0,1 %</span> <span class="hm-n">n=11</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 6%, var(--bg-tile));" title="Jeremy Go, BarcelonaELMS (LMP2_ELMS) : écart de rythme +0,1 % vs équipe (n=11) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">+0,1 %</span> <span class="hm-n">n=11</span></td>
               </tr>
               <tr>
                 <td>ImolaELMS</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 6%, var(--bg-tile));" title="Jeremy Go, ImolaELMS (LMP2_ELMS) : écart de rythme -0,2 % vs équipe (n=9).">-0,2 %</span> <span class="hm-n">n=9</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 6%, var(--bg-tile));" title="Jeremy Go, ImolaELMS (LMP2_ELMS) : écart de rythme -0,2 % vs équipe (n=9) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">-0,2 %</span> <span class="hm-n">n=9</span></td>
               </tr>
               <tr>
                 <td>BahrainWEC_Outer</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 7%, var(--bg-tile));" title="Jeremy Go, BahrainWEC_Outer (LMP2_ELMS) : écart de rythme -0,4 % vs équipe (n=5).">-0,4 %</span> <span class="hm-n">n=5</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 7%, var(--bg-tile));" title="Jeremy Go, BahrainWEC_Outer (LMP2_ELMS) : écart de rythme -0,4 % vs équipe (n=5) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">-0,4 %</span> <span class="hm-n">n=5</span></td>
               </tr>
               <tr class="low-n">
                 <td>MonzaWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 7%, var(--bg-tile));" title="Jeremy Go, MonzaWEC (LMP2_ELMS) : écart de rythme +0,4 % vs équipe (n=3).">+0,4 %</span> <span class="hm-n">n=3</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 7%, var(--bg-tile));" title="Jeremy Go, MonzaWEC (LMP2_ELMS) : écart de rythme +0,4 % vs équipe (n=3) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">+0,4 %</span> <span class="hm-n">n=3</span></td>
               </tr>
               <tr class="low-n">
                 <td>PaulRicardELMS</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 6%, var(--bg-tile));" title="Jeremy Go, PaulRicardELMS (LMP2_ELMS) : écart de rythme -0,3 % vs équipe (n=3).">-0,3 %</span> <span class="hm-n">n=3</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 6%, var(--bg-tile));" title="Jeremy Go, PaulRicardELMS (LMP2_ELMS) : écart de rythme -0,3 % vs équipe (n=3) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">-0,3 %</span> <span class="hm-n">n=3</span></td>
               </tr>
             </tbody>
           </table>
         </div>
+        <p class="catperf-note">« réel » = rythme calculé sur la moyenne des tours propres de course (race_laps.json) plutôt que sur le seul tour de pointe — voir « Écart meilleur tour vs rythme de course » ci-dessous pour l'aller plus loin.</p>
+      </div>
+      <div class="catperf">
+        <p class="catperf-head">Écart meilleur tour vs rythme de course</p>
+        <div class="table-wrap">
+          <table class="data-table cp-table">
+            <thead><tr><th>Circuit</th><th class="num">Écart vs pointe</th></tr></thead>
+            <tbody>
+              <tr>
+                <td>InterlagosWEC <span class="hm-n">LMP2_ELMS</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 62%, var(--bg-tile));" title="Jeremy Go, InterlagosWEC (LMP2_ELMS) : écart meilleur tour vs rythme de course -2,6 % (n=51 tours propres, 6 course(s)) — proche de 0 = reproduit son meilleur tour en boucle.">-2,6 %</span> <span class="hm-n">51 tours / 6 courses</span></td>
+              </tr>
+              <tr>
+                <td>LeMansWEC <span class="hm-n">LMP2_ELMS</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 42%, var(--bg-tile));" title="Jeremy Go, LeMansWEC (LMP2_ELMS) : écart meilleur tour vs rythme de course -1,4 % (n=41 tours propres, 7 course(s)) — proche de 0 = reproduit son meilleur tour en boucle.">-1,4 %</span> <span class="hm-n">41 tours / 7 courses</span></td>
+              </tr>
+              <tr class="low-n">
+                <td>MonzaWEC_Grande <span class="hm-n">LMP2_ELMS</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 48%, var(--bg-tile));" title="Jeremy Go, MonzaWEC_Grande (LMP2_ELMS) : écart meilleur tour vs rythme de course -1,6 % (n=35 tours propres, 1 course(s)) — proche de 0 = reproduit son meilleur tour en boucle.">-1,6 %</span> <span class="hm-n">35 tours / 1 course</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="catperf-note">Rythme de course réel (moyenne des tours propres secs, race_laps.json depuis le 28 août 2026) — proche de 0 % = Jeremy Go reproduit son meilleur tour en boucle ; un écart fort avec un bon rythme vs équipe ci-dessus signale un problème de constance plutôt que de vitesse pure. Lignes estompées : n &lt; 10 tours propres OU n &lt; 5 courses distinctes (ex. une longue course unique ne suffit pas, même à volume de tours élevé).</p>
+      </div>
+      <div class="catperf">
+        <p class="catperf-head">Régularité par circuit</p>
+        <div class="table-wrap">
+          <table class="data-table cp-table">
+            <thead><tr><th>Circuit</th><th class="num">Coefficient de variation</th></tr></thead>
+            <tbody>
+              <tr>
+                <td>InterlagosWEC <span class="hm-n">LMP2_ELMS</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 62%, var(--bg-tile));" title="Jeremy Go, InterlagosWEC (LMP2_ELMS) : coefficient de variation 2,46 % (n=51 tours propres, 6 course(s)) — plus bas = plus régulier tour après tour.">2,46 %</span> <span class="hm-n">51 tours / 6 courses</span></td>
+              </tr>
+              <tr>
+                <td>LeMansWEC <span class="hm-n">LMP2_ELMS</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 53%, var(--bg-tile));" title="Jeremy Go, LeMansWEC (LMP2_ELMS) : coefficient de variation 1,78 % (n=41 tours propres, 7 course(s)) — plus bas = plus régulier tour après tour.">1,78 %</span> <span class="hm-n">41 tours / 7 courses</span></td>
+              </tr>
+              <tr class="low-n">
+                <td>MonzaWEC_Grande <span class="hm-n">LMP2_ELMS</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 34%, var(--bg-tile));" title="Jeremy Go, MonzaWEC_Grande (LMP2_ELMS) : coefficient de variation 1,13 % (n=35 tours propres, 1 course(s)) — plus bas = plus régulier tour après tour.">1,13 %</span> <span class="hm-n">35 tours / 1 course</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="catperf-note">Écart-type des tours propres / rythme moyen — plus bas = plus régulier tour après tour, un levier directement actionnable contrairement au chrono brut. Lignes estompées : n &lt; 10 tours propres OU n &lt; 5 courses distinctes (ex. une longue course unique ne suffit pas, même à volume de tours élevé).</p>
       </div>
       <div class="catperf">
         <p class="catperf-head">Temps au tour par circuit</p>
@@ -2482,9 +2657,9 @@
       </div>
       <div class="trend-row">
         <span class="chip neutral"><span class="glyph">↔</span> Mixte</span>
-        <span class="trend-detail">DNF 17,5 % → 12,7 % · rythme -0,27 % → -0,05 % (n=110 sur 3 mois)</span>
+        <span class="trend-detail">DNF 17,5 % → 12,7 % · rythme -0,27 % → -0,11 % (n=110 sur 3 mois)</span>
       </div>
-      <p class="evolution-text">L'évolution de Jeremy Go est mixte sur les 3 derniers mois (n=110) : DNF/DQ passe de 17,5 % à 12,7 % pendant que le rythme évolue de -0,27 % à -0,05 % vs ses coéquipiers — les deux signaux ne racontent pas la même histoire, à ne pas résumer en une seule tendance.</p>
+      <p class="evolution-text">L'évolution de Jeremy Go est mixte sur les 3 derniers mois (n=110) : DNF/DQ passe de 17,5 % à 12,7 % pendant que le rythme évolue de -0,27 % à -0,11 % vs ses coéquipiers — les deux signaux ne racontent pas la même histoire, à ne pas résumer en une seule tendance.</p>
       <div class="qc-diag">
         <p class="qc-diag-head">Qualif vs course — racecraft (LMP2_ELMS)</p>
         <div class="qc-metrics">
@@ -2679,47 +2854,52 @@
             <tbody>
               <tr>
                 <td>SebringWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 20%, var(--bg-tile));" title="Loris Renault, SebringWEC (GT3) : écart de rythme +1,1 % vs équipe (n=10).">+1,1 %</span> <span class="hm-n">n=10</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 20%, var(--bg-tile));" title="Loris Renault, SebringWEC (GT3) : écart de rythme +1,1 % vs équipe (n=10) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">+1,1 %</span> <span class="hm-n">n=10</span></td>
               </tr>
               <tr>
                 <td>MonzaWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 7%, var(--bg-tile));" title="Loris Renault, MonzaWEC (GT3) : écart de rythme +0,4 % vs équipe (n=8).">+0,4 %</span> <span class="hm-n">n=8</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 7%, var(--bg-tile));" title="Loris Renault, MonzaWEC (GT3) : écart de rythme +0,4 % vs équipe (n=8) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">+0,4 %</span> <span class="hm-n">n=8</span></td>
               </tr>
               <tr>
                 <td>LeMansWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 52%, var(--bg-tile));" title="Loris Renault, LeMansWEC (GT3) : écart de rythme +2,9 % vs équipe (n=6).">+2,9 %</span> <span class="hm-n">n=6</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 52%, var(--bg-tile));" title="Loris Renault, LeMansWEC (GT3) : écart de rythme +2,9 % vs équipe (n=6) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">+2,9 %</span> <span class="hm-n">n=6</span></td>
               </tr>
               <tr>
                 <td>MonzaWEC_Grande</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 7%, var(--bg-tile));" title="Loris Renault, MonzaWEC_Grande (GT3) : écart de rythme +0,4 % vs équipe (n=6).">+0,4 %</span> <span class="hm-n">n=6</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 7%, var(--bg-tile));" title="Loris Renault, MonzaWEC_Grande (GT3) : écart de rythme +0,4 % vs équipe (n=6) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">+0,4 %</span> <span class="hm-n">n=6</span></td>
               </tr>
               <tr>
                 <td>PortimaoWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 6%, var(--bg-tile));" title="Loris Renault, PortimaoWEC (GT3) : écart de rythme +0,3 % vs équipe (n=6).">+0,3 %</span> <span class="hm-n">n=6</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 6%, var(--bg-tile));" title="Loris Renault, PortimaoWEC (GT3) : écart de rythme +0,3 % vs équipe (n=6) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">+0,3 %</span> <span class="hm-n">n=6</span></td>
               </tr>
               <tr class="low-n">
                 <td>DaytonaRC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 9%, var(--bg-tile));" title="Loris Renault, DaytonaRC (GT3) : écart de rythme +0,5 % vs équipe (n=4).">+0,5 %</span> <span class="hm-n">n=4</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 9%, var(--bg-tile));" title="Loris Renault, DaytonaRC (GT3) : écart de rythme +0,5 % vs équipe (n=4) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">+0,5 %</span> <span class="hm-n">n=4</span></td>
               </tr>
               <tr class="low-n">
                 <td>FujiWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 27%, var(--bg-tile));" title="Loris Renault, FujiWEC (GT3) : écart de rythme +1,5 % vs équipe (n=4).">+1,5 %</span> <span class="hm-n">n=4</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 27%, var(--bg-tile));" title="Loris Renault, FujiWEC (GT3) : écart de rythme +1,5 % vs équipe (n=4) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">+1,5 %</span> <span class="hm-n">n=4</span></td>
               </tr>
               <tr class="low-n">
                 <td>ImolaELMS</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 25%, var(--bg-tile));" title="Loris Renault, ImolaELMS (GT3) : écart de rythme +1,4 % vs équipe (n=4).">+1,4 %</span> <span class="hm-n">n=4</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 25%, var(--bg-tile));" title="Loris Renault, ImolaELMS (GT3) : écart de rythme +1,4 % vs équipe (n=4) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">+1,4 %</span> <span class="hm-n">n=4</span></td>
               </tr>
               <tr class="low-n">
                 <td>InterlagosWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 62%, var(--bg-tile));" title="Loris Renault, InterlagosWEC (GT3) : écart de rythme +12,8 % vs équipe (n=3).">+12,8 %</span> <span class="hm-n">n=3</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 62%, var(--bg-tile));" title="Loris Renault, InterlagosWEC (GT3) : écart de rythme +12,8 % vs équipe (n=3) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">+12,8 %</span> <span class="hm-n">n=3</span></td>
               </tr>
               <tr class="low-n">
                 <td>SpaWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 36%, var(--bg-tile));" title="Loris Renault, SpaWEC (GT3) : écart de rythme +2,0 % vs équipe (n=3).">+2,0 %</span> <span class="hm-n">n=3</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 36%, var(--bg-tile));" title="Loris Renault, SpaWEC (GT3) : écart de rythme +2,0 % vs équipe (n=3) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">+2,0 %</span> <span class="hm-n">n=3</span></td>
               </tr>
             </tbody>
           </table>
         </div>
+        <p class="catperf-note">« réel » = rythme calculé sur la moyenne des tours propres de course (race_laps.json) plutôt que sur le seul tour de pointe — voir « Écart meilleur tour vs rythme de course » ci-dessous pour l'aller plus loin.</p>
+      </div>
+      <div class="catperf">
+        <p class="catperf-head">Rythme de course réel</p>
+        <p class="catperf-note">Pas encore 5 tours propres enregistrés pour Loris Renault (race_laps.json depuis le 28 août 2026 seulement) — reviendra automatiquement avec le volume.</p>
       </div>
       <div class="catperf">
         <p class="catperf-head">Temps au tour par circuit</p>
@@ -2749,9 +2929,9 @@
       </div>
       <div class="trend-row">
         <span class="chip neutral"><span class="glyph">↔</span> Mixte</span>
-        <span class="trend-detail">DNF 27,2 % → 32,4 % · rythme +2,26 % → +1,20 % (n=37 sur 3 mois)</span>
+        <span class="trend-detail">DNF 27,2 % → 32,4 % · rythme +2,23 % → +1,20 % (n=37 sur 3 mois)</span>
       </div>
-      <p class="evolution-text">L'évolution de Loris Renault est mixte sur les 3 derniers mois (n=37) : DNF/DQ passe de 27,2 % à 32,4 % pendant que le rythme évolue de +2,26 % à +1,20 % vs ses coéquipiers — les deux signaux ne racontent pas la même histoire, à ne pas résumer en une seule tendance.</p>
+      <p class="evolution-text">L'évolution de Loris Renault est mixte sur les 3 derniers mois (n=37) : DNF/DQ passe de 27,2 % à 32,4 % pendant que le rythme évolue de +2,23 % à +1,20 % vs ses coéquipiers — les deux signaux ne racontent pas la même histoire, à ne pas résumer en une seule tendance.</p>
       <div class="qc-diag">
         <p class="qc-diag-head">Qualif vs course — racecraft (GT3)</p>
         <div class="qc-metrics">
@@ -2938,31 +3118,70 @@
             <tbody>
               <tr>
                 <td>SilverstoneELMS</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 14%, var(--bg-tile));" title="Thierry Almilo, SilverstoneELMS (Hyper) : écart de rythme +0,8 % vs équipe (n=6).">+0,8 %</span> <span class="hm-n">n=6</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 14%, var(--bg-tile));" title="Thierry Almilo, SilverstoneELMS (Hyper) : écart de rythme +0,8 % vs équipe (n=6) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">+0,8 %</span> <span class="hm-n">n=6</span></td>
               </tr>
               <tr class="low-n">
                 <td>BahrainWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 13%, var(--bg-tile));" title="Thierry Almilo, BahrainWEC (Hyper) : écart de rythme -0,7 % vs équipe (n=4).">-0,7 %</span> <span class="hm-n">n=4</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 13%, var(--bg-tile));" title="Thierry Almilo, BahrainWEC (Hyper) : écart de rythme -0,7 % vs équipe (n=4) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">-0,7 %</span> <span class="hm-n">n=4</span></td>
               </tr>
               <tr class="low-n">
                 <td>InterlagosWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 11%, var(--bg-tile));" title="Thierry Almilo, InterlagosWEC (Hyper) : écart de rythme -0,6 % vs équipe (n=4).">-0,6 %</span> <span class="hm-n">n=4</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 11%, var(--bg-tile));" title="Thierry Almilo, InterlagosWEC (Hyper) : écart de rythme -0,6 % vs équipe (n=4) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">-0,6 %</span> <span class="hm-n">n=4</span></td>
               </tr>
               <tr class="low-n">
                 <td>LeMansWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 9%, var(--bg-tile));" title="Thierry Almilo, LeMansWEC (Hyper) : écart de rythme -0,5 % vs équipe (n=4).">-0,5 %</span> <span class="hm-n">n=4</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 9%, var(--bg-tile));" title="Thierry Almilo, LeMansWEC (Hyper) : écart de rythme -0,5 % vs équipe (n=4) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">-0,5 %</span> <span class="hm-n">n=4</span></td>
               </tr>
               <tr class="low-n">
                 <td>MonzaWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 14%, var(--bg-tile));" title="Thierry Almilo, MonzaWEC (Hyper) : écart de rythme +0,8 % vs équipe (n=4).">+0,8 %</span> <span class="hm-n">n=4</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 14%, var(--bg-tile));" title="Thierry Almilo, MonzaWEC (Hyper) : écart de rythme +0,8 % vs équipe (n=4) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">+0,8 %</span> <span class="hm-n">n=4</span></td>
               </tr>
               <tr class="low-n">
                 <td>SpaWEC_Endce</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 22%, var(--bg-tile));" title="Thierry Almilo, SpaWEC_Endce (Hyper) : écart de rythme +1,2 % vs équipe (n=3).">+1,2 %</span> <span class="hm-n">n=3</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 22%, var(--bg-tile));" title="Thierry Almilo, SpaWEC_Endce (Hyper) : écart de rythme +1,2 % vs équipe (n=3) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">+1,2 %</span> <span class="hm-n">n=3</span></td>
               </tr>
             </tbody>
           </table>
         </div>
+        <p class="catperf-note">« réel » = rythme calculé sur la moyenne des tours propres de course (race_laps.json) plutôt que sur le seul tour de pointe — voir « Écart meilleur tour vs rythme de course » ci-dessous pour l'aller plus loin.</p>
+      </div>
+      <div class="catperf">
+        <p class="catperf-head">Écart meilleur tour vs rythme de course</p>
+        <div class="table-wrap">
+          <table class="data-table cp-table">
+            <thead><tr><th>Circuit</th><th class="num">Écart vs pointe</th></tr></thead>
+            <tbody>
+              <tr class="low-n">
+                <td>BahrainWEC <span class="hm-n">Hyper</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 45%, var(--bg-tile));" title="Thierry Almilo, BahrainWEC (Hyper) : écart meilleur tour vs rythme de course -1,5 % (n=80 tours propres, 3 course(s)) — proche de 0 = reproduit son meilleur tour en boucle.">-1,5 %</span> <span class="hm-n">80 tours / 3 courses</span></td>
+              </tr>
+              <tr class="low-n">
+                <td>LeMansWEC <span class="hm-n">Hyper</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 39%, var(--bg-tile));" title="Thierry Almilo, LeMansWEC (Hyper) : écart meilleur tour vs rythme de course -1,3 % (n=16 tours propres, 2 course(s)) — proche de 0 = reproduit son meilleur tour en boucle.">-1,3 %</span> <span class="hm-n">16 tours / 2 courses</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="catperf-note">Rythme de course réel (moyenne des tours propres secs, race_laps.json depuis le 28 août 2026) — proche de 0 % = Thierry Almilo reproduit son meilleur tour en boucle ; un écart fort avec un bon rythme vs équipe ci-dessus signale un problème de constance plutôt que de vitesse pure. Lignes estompées : n &lt; 10 tours propres OU n &lt; 5 courses distinctes (ex. une longue course unique ne suffit pas, même à volume de tours élevé).</p>
+      </div>
+      <div class="catperf">
+        <p class="catperf-head">Régularité par circuit</p>
+        <div class="table-wrap">
+          <table class="data-table cp-table">
+            <thead><tr><th>Circuit</th><th class="num">Coefficient de variation</th></tr></thead>
+            <tbody>
+              <tr class="low-n">
+                <td>BahrainWEC <span class="hm-n">Hyper</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 32%, var(--bg-tile));" title="Thierry Almilo, BahrainWEC (Hyper) : coefficient de variation 1,06 % (n=80 tours propres, 3 course(s)) — plus bas = plus régulier tour après tour.">1,06 %</span> <span class="hm-n">80 tours / 3 courses</span></td>
+              </tr>
+              <tr class="low-n">
+                <td>LeMansWEC <span class="hm-n">Hyper</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 40%, var(--bg-tile));" title="Thierry Almilo, LeMansWEC (Hyper) : coefficient de variation 1,35 % (n=16 tours propres, 2 course(s)) — plus bas = plus régulier tour après tour.">1,35 %</span> <span class="hm-n">16 tours / 2 courses</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="catperf-note">Écart-type des tours propres / rythme moyen — plus bas = plus régulier tour après tour, un levier directement actionnable contrairement au chrono brut. Lignes estompées : n &lt; 10 tours propres OU n &lt; 5 courses distinctes (ex. une longue course unique ne suffit pas, même à volume de tours élevé).</p>
       </div>
       <div class="catperf">
         <p class="catperf-head">Temps au tour par circuit</p>
@@ -2991,9 +3210,9 @@
       </div>
       <div class="trend-row">
         <span class="chip neutral"><span class="glyph">→</span> Stable</span>
-        <span class="trend-detail">DNF 4,3 % → 5,3 % · rythme +0,26 % → +0,06 % (n=19 sur 3 mois)</span>
+        <span class="trend-detail">DNF 4,3 % → 5,3 % · rythme +0,26 % → +0,35 % (n=19 sur 3 mois)</span>
       </div>
-      <p class="evolution-text">Le profil de Thierry Almilo est stable sur les 3 derniers mois (n=19), sans mouvement franc sur la fiabilité (5,3 %) ni sur le rythme (+0,06 % vs coéquipiers) — c'est de la régularité à un niveau déjà satisfaisant, pas une tendance en cours.</p>
+      <p class="evolution-text">Le profil de Thierry Almilo est stable sur les 3 derniers mois (n=19), sans mouvement franc sur la fiabilité (5,3 %) ni sur le rythme (+0,35 % vs coéquipiers) — c'est de la régularité à un niveau déjà satisfaisant, pas une tendance en cours.</p>
       <div class="qc-diag">
         <p class="qc-diag-head">Qualif vs course — racecraft (GT3)</p>
         <div class="qc-metrics">
@@ -3190,15 +3409,20 @@
             <tbody>
               <tr>
                 <td>LeMansWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 16%, var(--bg-tile));" title="Yann Parquet, LeMansWEC (GT3) : écart de rythme -0,9 % vs équipe (n=22).">-0,9 %</span> <span class="hm-n">n=22</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 16%, var(--bg-tile));" title="Yann Parquet, LeMansWEC (GT3) : écart de rythme -0,9 % vs équipe (n=22) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">-0,9 %</span> <span class="hm-n">n=22</span></td>
               </tr>
               <tr>
                 <td>MonzaWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 9%, var(--bg-tile));" title="Yann Parquet, MonzaWEC (GT3) : écart de rythme -0,5 % vs équipe (n=5).">-0,5 %</span> <span class="hm-n">n=5</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 9%, var(--bg-tile));" title="Yann Parquet, MonzaWEC (GT3) : écart de rythme -0,5 % vs équipe (n=5) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">-0,5 %</span> <span class="hm-n">n=5</span></td>
               </tr>
             </tbody>
           </table>
         </div>
+        <p class="catperf-note">« réel » = rythme calculé sur la moyenne des tours propres de course (race_laps.json) plutôt que sur le seul tour de pointe — voir « Écart meilleur tour vs rythme de course » ci-dessous pour l'aller plus loin.</p>
+      </div>
+      <div class="catperf">
+        <p class="catperf-head">Rythme de course réel</p>
+        <p class="catperf-note">Pas encore 5 tours propres enregistrés pour Yann Parquet (race_laps.json depuis le 28 août 2026 seulement) — reviendra automatiquement avec le volume.</p>
       </div>
       <div class="catperf">
         <p class="catperf-head">Temps au tour par circuit</p>
@@ -3393,11 +3617,16 @@
             <tbody>
               <tr>
                 <td>InterlagosWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 11%, var(--bg-tile));" title="Alex Thieffry, InterlagosWEC (Hyper) : écart de rythme -0,6 % vs équipe (n=7).">-0,6 %</span> <span class="hm-n">n=7</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 11%, var(--bg-tile));" title="Alex Thieffry, InterlagosWEC (Hyper) : écart de rythme -0,6 % vs équipe (n=7) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">-0,6 %</span> <span class="hm-n">n=7</span></td>
               </tr>
             </tbody>
           </table>
         </div>
+        <p class="catperf-note">« réel » = rythme calculé sur la moyenne des tours propres de course (race_laps.json) plutôt que sur le seul tour de pointe — voir « Écart meilleur tour vs rythme de course » ci-dessous pour l'aller plus loin.</p>
+      </div>
+      <div class="catperf">
+        <p class="catperf-head">Rythme de course réel</p>
+        <p class="catperf-note">Pas encore 5 tours propres enregistrés pour Alex Thieffry (race_laps.json depuis le 28 août 2026 seulement) — reviendra automatiquement avec le volume.</p>
       </div>
       <div class="catperf">
         <p class="catperf-head">Temps au tour par circuit</p>
@@ -3424,9 +3653,9 @@
       </div>
       <div class="trend-row">
         <span class="chip neutral"><span class="glyph">→</span> Stable</span>
-        <span class="trend-detail">DNF 26,9 % → 25,8 % · rythme -0,61 % → -0,11 % (n=31 sur 3 mois)</span>
+        <span class="trend-detail">DNF 26,9 % → 25,8 % · rythme -0,63 % → -0,25 % (n=31 sur 3 mois)</span>
       </div>
-      <p class="evolution-text">Le profil de Alex Thieffry est stable sur les 3 derniers mois (n=31), sans mouvement franc sur la fiabilité (25,8 %) ni sur le rythme (-0,11 % vs coéquipiers) — c'est de la régularité à un niveau déjà satisfaisant, pas une tendance en cours.</p>
+      <p class="evolution-text">Le profil de Alex Thieffry est stable sur les 3 derniers mois (n=31), sans mouvement franc sur la fiabilité (25,8 %) ni sur le rythme (-0,25 % vs coéquipiers) — c'est de la régularité à un niveau déjà satisfaisant, pas une tendance en cours.</p>
       <div class="qc-diag">
         <p class="qc-diag-head">Qualif vs course — racecraft (GT3)</p>
         <div class="qc-metrics">
@@ -3605,27 +3834,74 @@
             <tbody>
               <tr>
                 <td>InterlagosWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 6%, var(--bg-tile));" title="Titouan Fressier, InterlagosWEC (LMP2_ELMS) : écart de rythme -0,3 % vs équipe (n=12).">-0,3 %</span> <span class="hm-n">n=12</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 6%, var(--bg-tile));" title="Titouan Fressier, InterlagosWEC (LMP2_ELMS) : écart de rythme -0,3 % vs équipe (n=12) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">-0,3 %</span> <span class="hm-n">n=12</span></td>
               </tr>
               <tr>
                 <td>QatarWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 9%, var(--bg-tile));" title="Titouan Fressier, QatarWEC (LMP2_ELMS) : écart de rythme -0,5 % vs équipe (n=6).">-0,5 %</span> <span class="hm-n">n=6</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 9%, var(--bg-tile));" title="Titouan Fressier, QatarWEC (LMP2_ELMS) : écart de rythme -0,5 % vs équipe (n=6) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">-0,5 %</span> <span class="hm-n">n=6</span></td>
               </tr>
               <tr class="low-n">
                 <td>MonzaWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 20%, var(--bg-tile));" title="Titouan Fressier, MonzaWEC (LMP2_ELMS) : écart de rythme -1,1 % vs équipe (n=4).">-1,1 %</span> <span class="hm-n">n=4</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 20%, var(--bg-tile));" title="Titouan Fressier, MonzaWEC (LMP2_ELMS) : écart de rythme -1,1 % vs équipe (n=4) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">-1,1 %</span> <span class="hm-n">n=4</span></td>
               </tr>
               <tr class="low-n">
                 <td>BarcelonaELMS</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 6%, var(--bg-tile));" title="Titouan Fressier, BarcelonaELMS (LMP2_ELMS) : écart de rythme -0,2 % vs équipe (n=3).">-0,2 %</span> <span class="hm-n">n=3</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 6%, var(--bg-tile));" title="Titouan Fressier, BarcelonaELMS (LMP2_ELMS) : écart de rythme -0,2 % vs équipe (n=3) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">-0,2 %</span> <span class="hm-n">n=3</span></td>
               </tr>
               <tr class="low-n">
                 <td>PaulRicardELMS</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 9%, var(--bg-tile));" title="Titouan Fressier, PaulRicardELMS (LMP2_ELMS) : écart de rythme +0,5 % vs équipe (n=3).">+0,5 %</span> <span class="hm-n">n=3</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 9%, var(--bg-tile));" title="Titouan Fressier, PaulRicardELMS (LMP2_ELMS) : écart de rythme +0,5 % vs équipe (n=3) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">+0,5 %</span> <span class="hm-n">n=3</span></td>
               </tr>
             </tbody>
           </table>
         </div>
+        <p class="catperf-note">« réel » = rythme calculé sur la moyenne des tours propres de course (race_laps.json) plutôt que sur le seul tour de pointe — voir « Écart meilleur tour vs rythme de course » ci-dessous pour l'aller plus loin.</p>
+      </div>
+      <div class="catperf">
+        <p class="catperf-head">Écart meilleur tour vs rythme de course</p>
+        <div class="table-wrap">
+          <table class="data-table cp-table">
+            <thead><tr><th>Circuit</th><th class="num">Écart vs pointe</th></tr></thead>
+            <tbody>
+              <tr class="low-n">
+                <td>DaytonaRC <span class="hm-n">LMP2</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 42%, var(--bg-tile));" title="Titouan Fressier, DaytonaRC (LMP2) : écart meilleur tour vs rythme de course -1,4 % (n=230 tours propres, 1 course(s)) — proche de 0 = reproduit son meilleur tour en boucle.">-1,4 %</span> <span class="hm-n">230 tours / 1 course</span></td>
+              </tr>
+              <tr class="low-n">
+                <td>InterlagosWEC <span class="hm-n">LMP2_ELMS</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 62%, var(--bg-tile));" title="Titouan Fressier, InterlagosWEC (LMP2_ELMS) : écart meilleur tour vs rythme de course -3,5 % (n=25 tours propres, 3 course(s)) — proche de 0 = reproduit son meilleur tour en boucle.">-3,5 %</span> <span class="hm-n">25 tours / 3 courses</span></td>
+              </tr>
+              <tr class="low-n">
+                <td>LeMansWEC <span class="hm-n">LMP2_ELMS</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 9%, var(--bg-tile));" title="Titouan Fressier, LeMansWEC (LMP2_ELMS) : écart meilleur tour vs rythme de course -0,3 % (n=10 tours propres, 2 course(s)) — proche de 0 = reproduit son meilleur tour en boucle.">-0,3 %</span> <span class="hm-n">10 tours / 2 courses</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="catperf-note">Rythme de course réel (moyenne des tours propres secs, race_laps.json depuis le 28 août 2026) — proche de 0 % = Titouan Fressier reproduit son meilleur tour en boucle ; un écart fort avec un bon rythme vs équipe ci-dessus signale un problème de constance plutôt que de vitesse pure. Lignes estompées : n &lt; 10 tours propres OU n &lt; 5 courses distinctes (ex. une longue course unique ne suffit pas, même à volume de tours élevé).</p>
+      </div>
+      <div class="catperf">
+        <p class="catperf-head">Régularité par circuit</p>
+        <div class="table-wrap">
+          <table class="data-table cp-table">
+            <thead><tr><th>Circuit</th><th class="num">Coefficient de variation</th></tr></thead>
+            <tbody>
+              <tr class="low-n">
+                <td>DaytonaRC <span class="hm-n">LMP2</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 31%, var(--bg-tile));" title="Titouan Fressier, DaytonaRC (LMP2) : coefficient de variation 1,03 % (n=230 tours propres, 1 course(s)) — plus bas = plus régulier tour après tour.">1,03 %</span> <span class="hm-n">230 tours / 1 course</span></td>
+              </tr>
+              <tr class="low-n">
+                <td>InterlagosWEC <span class="hm-n">LMP2_ELMS</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 62%, var(--bg-tile));" title="Titouan Fressier, InterlagosWEC (LMP2_ELMS) : coefficient de variation 3,70 % (n=25 tours propres, 3 course(s)) — plus bas = plus régulier tour après tour.">3,70 %</span> <span class="hm-n">25 tours / 3 courses</span></td>
+              </tr>
+              <tr class="low-n">
+                <td>LeMansWEC <span class="hm-n">LMP2_ELMS</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 6%, var(--bg-tile));" title="Titouan Fressier, LeMansWEC (LMP2_ELMS) : coefficient de variation 0,21 % (n=10 tours propres, 2 course(s)) — plus bas = plus régulier tour après tour.">0,21 %</span> <span class="hm-n">10 tours / 2 courses</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="catperf-note">Écart-type des tours propres / rythme moyen — plus bas = plus régulier tour après tour, un levier directement actionnable contrairement au chrono brut. Lignes estompées : n &lt; 10 tours propres OU n &lt; 5 courses distinctes (ex. une longue course unique ne suffit pas, même à volume de tours élevé).</p>
       </div>
       <div class="catperf">
         <p class="catperf-head">Temps au tour par circuit</p>
@@ -3801,19 +4077,24 @@
             <tbody>
               <tr>
                 <td>LeMansWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 9%, var(--bg-tile));" title="Jeremy Drouin, LeMansWEC (Hyper) : écart de rythme -0,5 % vs équipe (n=10).">-0,5 %</span> <span class="hm-n">n=10</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 9%, var(--bg-tile));" title="Jeremy Drouin, LeMansWEC (Hyper) : écart de rythme -0,5 % vs équipe (n=10) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">-0,5 %</span> <span class="hm-n">n=10</span></td>
               </tr>
               <tr>
                 <td>InterlagosWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 7%, var(--bg-tile));" title="Jeremy Drouin, InterlagosWEC (Hyper) : écart de rythme -0,4 % vs équipe (n=5).">-0,4 %</span> <span class="hm-n">n=5</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 7%, var(--bg-tile));" title="Jeremy Drouin, InterlagosWEC (Hyper) : écart de rythme -0,4 % vs équipe (n=5) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">-0,4 %</span> <span class="hm-n">n=5</span></td>
               </tr>
               <tr class="low-n">
                 <td>MonzaWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 14%, var(--bg-tile));" title="Jeremy Drouin, MonzaWEC (Hyper) : écart de rythme -0,8 % vs équipe (n=3).">-0,8 %</span> <span class="hm-n">n=3</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 14%, var(--bg-tile));" title="Jeremy Drouin, MonzaWEC (Hyper) : écart de rythme -0,8 % vs équipe (n=3) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">-0,8 %</span> <span class="hm-n">n=3</span></td>
               </tr>
             </tbody>
           </table>
         </div>
+        <p class="catperf-note">« réel » = rythme calculé sur la moyenne des tours propres de course (race_laps.json) plutôt que sur le seul tour de pointe — voir « Écart meilleur tour vs rythme de course » ci-dessous pour l'aller plus loin.</p>
+      </div>
+      <div class="catperf">
+        <p class="catperf-head">Rythme de course réel</p>
+        <p class="catperf-note">Pas encore 5 tours propres enregistrés pour Jeremy Drouin (race_laps.json depuis le 28 août 2026 seulement) — reviendra automatiquement avec le volume.</p>
       </div>
       <div class="catperf">
         <p class="catperf-head">Temps au tour par circuit</p>
@@ -3983,11 +4264,16 @@
             <tbody>
               <tr class="low-n">
                 <td>LeMansWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 9%, var(--bg-tile));" title="Romain Lafon, LeMansWEC (Hyper) : écart de rythme +0,5 % vs équipe (n=4).">+0,5 %</span> <span class="hm-n">n=4</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 9%, var(--bg-tile));" title="Romain Lafon, LeMansWEC (Hyper) : écart de rythme +0,5 % vs équipe (n=4) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">+0,5 %</span> <span class="hm-n">n=4</span></td>
               </tr>
             </tbody>
           </table>
         </div>
+        <p class="catperf-note">« réel » = rythme calculé sur la moyenne des tours propres de course (race_laps.json) plutôt que sur le seul tour de pointe — voir « Écart meilleur tour vs rythme de course » ci-dessous pour l'aller plus loin.</p>
+      </div>
+      <div class="catperf">
+        <p class="catperf-head">Rythme de course réel</p>
+        <p class="catperf-note">Pas encore 5 tours propres enregistrés pour Romain Lafon (race_laps.json depuis le 28 août 2026 seulement) — reviendra automatiquement avec le volume.</p>
       </div>
       <div class="catperf">
         <p class="catperf-head">Temps au tour par circuit</p>
@@ -4133,11 +4419,42 @@
             <tbody>
               <tr>
                 <td>LeMansWEC</td>
-                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 6%, var(--bg-tile));" title="Fanch Fressier, LeMansWEC (LMP2) : écart de rythme -0,3 % vs équipe (n=8).">-0,3 %</span> <span class="hm-n">n=8</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 6%, var(--bg-tile));" title="Fanch Fressier, LeMansWEC (LMP2) : écart de rythme -0,3 % vs équipe (n=8) — tour de pointe (repli, pas de détail tour par tour disponible pour cette combinaison).">-0,3 %</span> <span class="hm-n">n=8</span></td>
               </tr>
             </tbody>
           </table>
         </div>
+        <p class="catperf-note">« réel » = rythme calculé sur la moyenne des tours propres de course (race_laps.json) plutôt que sur le seul tour de pointe — voir « Écart meilleur tour vs rythme de course » ci-dessous pour l'aller plus loin.</p>
+      </div>
+      <div class="catperf">
+        <p class="catperf-head">Écart meilleur tour vs rythme de course</p>
+        <div class="table-wrap">
+          <table class="data-table cp-table">
+            <thead><tr><th>Circuit</th><th class="num">Écart vs pointe</th></tr></thead>
+            <tbody>
+              <tr class="low-n">
+                <td>BahrainWEC <span class="hm-n">LMP3</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 48%, var(--bg-tile));" title="Fanch Fressier, BahrainWEC (LMP3) : écart meilleur tour vs rythme de course -1,6 % (n=10 tours propres, 1 course(s)) — proche de 0 = reproduit son meilleur tour en boucle.">-1,6 %</span> <span class="hm-n">10 tours / 1 course</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="catperf-note">Rythme de course réel (moyenne des tours propres secs, race_laps.json depuis le 28 août 2026) — proche de 0 % = Fanch Fressier reproduit son meilleur tour en boucle ; un écart fort avec un bon rythme vs équipe ci-dessus signale un problème de constance plutôt que de vitesse pure. Lignes estompées : n &lt; 10 tours propres OU n &lt; 5 courses distinctes (ex. une longue course unique ne suffit pas, même à volume de tours élevé).</p>
+      </div>
+      <div class="catperf">
+        <p class="catperf-head">Régularité par circuit</p>
+        <div class="table-wrap">
+          <table class="data-table cp-table">
+            <thead><tr><th>Circuit</th><th class="num">Coefficient de variation</th></tr></thead>
+            <tbody>
+              <tr class="low-n">
+                <td>BahrainWEC <span class="hm-n">LMP3</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 54%, var(--bg-tile));" title="Fanch Fressier, BahrainWEC (LMP3) : coefficient de variation 1,81 % (n=10 tours propres, 1 course(s)) — plus bas = plus régulier tour après tour.">1,81 %</span> <span class="hm-n">10 tours / 1 course</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="catperf-note">Écart-type des tours propres / rythme moyen — plus bas = plus régulier tour après tour, un levier directement actionnable contrairement au chrono brut. Lignes estompées : n &lt; 10 tours propres OU n &lt; 5 courses distinctes (ex. une longue course unique ne suffit pas, même à volume de tours élevé).</p>
       </div>
       <div class="catperf">
         <p class="catperf-head">Temps au tour par circuit</p>
@@ -4162,10 +4479,10 @@
         <p class="qc-diag-head">Qualif vs course — racecraft (LMP3)</p>
         <div class="qc-metrics">
           <div class="qc-metric" style="background:color-mix(in oklab, var(--div-pos) 6%, var(--bg-tile));"><span class="qc-metric-label">Delta grille vs coéquipiers</span><span class="qc-metric-value">-0,22 <span class="hm-n">n=16</span></span></div>
-          <div class="qc-metric" style="background:color-mix(in oklab, var(--div-pos) 11%, var(--bg-tile));"><span class="qc-metric-label">Rythme course vs coéquipiers</span><span class="qc-metric-value">-0,6 % <span class="hm-n">n=16</span></span></div>
+          <div class="qc-metric" style="background:color-mix(in oklab, var(--div-pos) 9%, var(--bg-tile));"><span class="qc-metric-label">Rythme course vs coéquipiers</span><span class="qc-metric-value">-0,5 % <span class="hm-n">n=16</span></span></div>
           <div class="qc-metric" style="background:color-mix(in oklab, var(--div-pos) 6%, var(--bg-tile));"><span class="qc-metric-label">Gain médian en course</span><span class="qc-metric-value">+0 <span class="hm-n">n=14</span></span></div>
         </div>
-        <p class="priority-text">En LMP3, Fanch Fressier qualifie devant ses coéquipiers (-0,22 place, n=16) et affiche un rythme plus rapide (-0,6 %, n=16), et un gain médian nul ou négatif (+0,0, n=14) : le potentiel n'est pas converti en places.</p>
+        <p class="priority-text">En LMP3, Fanch Fressier qualifie devant ses coéquipiers (-0,22 place, n=16) et affiche un rythme plus rapide (-0,5 %, n=16), et un gain médian nul ou négatif (+0,0, n=14) : le potentiel n'est pas converti en places.</p>
       </div>
     </div>
     <div class="pilot-card" data-drv="Yann_LE_DOUSSAL">
@@ -4277,6 +4594,10 @@
       <div class="catperf">
         <p class="catperf-head">Rythme vs équipe par circuit — LMP3</p>
         <p class="catperf-note">Pas encore de circuit avec n ≥ 3 pour Yann Le Doussal dans cette catégorie.</p>
+      </div>
+      <div class="catperf">
+        <p class="catperf-head">Rythme de course réel</p>
+        <p class="catperf-note">Pas encore 5 tours propres enregistrés pour Yann Le Doussal (race_laps.json depuis le 28 août 2026 seulement) — reviendra automatiquement avec le volume.</p>
       </div>
       <div class="trend-row">
         <span class="chip indicatif"><span class="glyph"></span> Indicatif</span>
@@ -4394,6 +4715,10 @@
         <p class="catperf-head">Rythme vs équipe par circuit — GT3</p>
         <p class="catperf-note">Pas encore de circuit avec n ≥ 3 pour Lilian Regis dans cette catégorie.</p>
       </div>
+      <div class="catperf">
+        <p class="catperf-head">Rythme de course réel</p>
+        <p class="catperf-note">Pas encore 5 tours propres enregistrés pour Lilian Regis (race_laps.json depuis le 28 août 2026 seulement) — reviendra automatiquement avec le volume.</p>
+      </div>
       <div class="trend-row">
         <span class="chip indicatif"><span class="glyph"></span> Indicatif</span>
         <span class="trend-detail">n=1 sur 3 mois — volume insuffisant pour conclure</span>
@@ -4503,6 +4828,10 @@
       <div class="catperf">
         <p class="catperf-head">Rythme vs équipe par circuit — GT3</p>
         <p class="catperf-note">Pas encore de circuit avec n ≥ 3 pour Ramco Ess dans cette catégorie.</p>
+      </div>
+      <div class="catperf">
+        <p class="catperf-head">Rythme de course réel</p>
+        <p class="catperf-note">Pas encore 5 tours propres enregistrés pour Ramco Ess (race_laps.json depuis le 28 août 2026 seulement) — reviendra automatiquement avec le volume.</p>
       </div>
       <div class="trend-row">
         <span class="chip indicatif"><span class="glyph"></span> Indicatif</span>
@@ -4620,6 +4949,36 @@
         <p class="catperf-head">Rythme vs équipe par circuit — GT3</p>
         <p class="catperf-note">Pas encore de circuit avec n ≥ 3 pour Toxycury Ingenieur dans cette catégorie.</p>
       </div>
+      <div class="catperf">
+        <p class="catperf-head">Écart meilleur tour vs rythme de course</p>
+        <div class="table-wrap">
+          <table class="data-table cp-table">
+            <thead><tr><th>Circuit</th><th class="num">Écart vs pointe</th></tr></thead>
+            <tbody>
+              <tr class="low-n">
+                <td>CotAWEC <span class="hm-n">GT3</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 45%, var(--bg-tile));" title="Toxycury Ingenieur, CotAWEC (GT3) : écart meilleur tour vs rythme de course -1,5 % (n=95 tours propres, 1 course(s)) — proche de 0 = reproduit son meilleur tour en boucle.">-1,5 %</span> <span class="hm-n">95 tours / 1 course</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="catperf-note">Rythme de course réel (moyenne des tours propres secs, race_laps.json depuis le 28 août 2026) — proche de 0 % = Toxycury Ingenieur reproduit son meilleur tour en boucle ; un écart fort avec un bon rythme vs équipe ci-dessus signale un problème de constance plutôt que de vitesse pure. Lignes estompées : n &lt; 10 tours propres OU n &lt; 5 courses distinctes (ex. une longue course unique ne suffit pas, même à volume de tours élevé).</p>
+      </div>
+      <div class="catperf">
+        <p class="catperf-head">Régularité par circuit</p>
+        <div class="table-wrap">
+          <table class="data-table cp-table">
+            <thead><tr><th>Circuit</th><th class="num">Coefficient de variation</th></tr></thead>
+            <tbody>
+              <tr class="low-n">
+                <td>CotAWEC <span class="hm-n">GT3</span></td>
+                <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-neg) 26%, var(--bg-tile));" title="Toxycury Ingenieur, CotAWEC (GT3) : coefficient de variation 0,88 % (n=95 tours propres, 1 course(s)) — plus bas = plus régulier tour après tour.">0,88 %</span> <span class="hm-n">95 tours / 1 course</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="catperf-note">Écart-type des tours propres / rythme moyen — plus bas = plus régulier tour après tour, un levier directement actionnable contrairement au chrono brut. Lignes estompées : n &lt; 10 tours propres OU n &lt; 5 courses distinctes (ex. une longue course unique ne suffit pas, même à volume de tours élevé).</p>
+      </div>
       <div class="trend-row">
         <span class="chip indicatif"><span class="glyph"></span> Indicatif</span>
         <span class="trend-detail">n=5 sur 3 mois — volume insuffisant pour conclure</span>
@@ -4629,10 +4988,10 @@
         <p class="qc-diag-head">Qualif vs course — racecraft (GT3)</p>
         <div class="qc-metrics">
           <div class="qc-metric" style="background:color-mix(in oklab, var(--div-neg) 37%, var(--bg-tile));"><span class="qc-metric-label">Delta grille vs coéquipiers</span><span class="qc-metric-value">+3,38 <span class="hm-n">n=8</span></span></div>
-          <div class="qc-metric" style="background:color-mix(in oklab, var(--div-neg) 20%, var(--bg-tile));"><span class="qc-metric-label">Rythme course vs coéquipiers</span><span class="qc-metric-value">+1,1 % <span class="hm-n">n=8</span></span></div>
+          <div class="qc-metric" style="background:color-mix(in oklab, var(--div-neg) 23%, var(--bg-tile));"><span class="qc-metric-label">Rythme course vs coéquipiers</span><span class="qc-metric-value">+1,3 % <span class="hm-n">n=8</span></span></div>
           <div class="qc-metric" style="background:color-mix(in oklab, var(--div-pos) 22%, var(--bg-tile));"><span class="qc-metric-label">Gain médian en course</span><span class="qc-metric-value">+2 <span class="hm-n">n=4</span></span></div>
         </div>
-        <p class="priority-text">En GT3, Toxycury Ingenieur qualifie derrière ses coéquipiers (+3,38 place, n=8) et affiche un rythme plus lent (+1,1 %, n=8), mais son gain médian en course (+2,0 places, n=4) montre une vraie remontée — sans qu'on puisse dire si c'est du racecraft ou de l'attrition devant lui, ces données ne permettent pas de trancher.</p>
+        <p class="priority-text">En GT3, Toxycury Ingenieur qualifie derrière ses coéquipiers (+3,38 place, n=8) et affiche un rythme plus lent (+1,3 %, n=8), mais son gain médian en course (+2,0 places, n=4) montre une vraie remontée — sans qu'on puisse dire si c'est du racecraft ou de l'attrition devant lui, ces données ne permettent pas de trancher.</p>
       </div>
     </div>
     <div class="pilot-card" data-drv="Clement_BERGER">
@@ -4729,6 +5088,10 @@
       <div class="catperf">
         <p class="catperf-head">Rythme vs équipe par circuit — GT3</p>
         <p class="catperf-note">Pas encore de circuit avec n ≥ 3 pour Clement Berger dans cette catégorie.</p>
+      </div>
+      <div class="catperf">
+        <p class="catperf-head">Rythme de course réel</p>
+        <p class="catperf-note">Pas encore 5 tours propres enregistrés pour Clement Berger (race_laps.json depuis le 28 août 2026 seulement) — reviendra automatiquement avec le volume.</p>
       </div>
       <div class="trend-row">
         <span class="chip indicatif"><span class="glyph"></span> Indicatif</span>
@@ -4828,6 +5191,10 @@
         <p class="catperf-head">Rythme vs équipe par circuit — GT3</p>
         <p class="catperf-note">Pas encore de circuit avec n ≥ 3 pour Robin Chuinard dans cette catégorie.</p>
       </div>
+      <div class="catperf">
+        <p class="catperf-head">Rythme de course réel</p>
+        <p class="catperf-note">Pas encore 5 tours propres enregistrés pour Robin Chuinard (race_laps.json depuis le 28 août 2026 seulement) — reviendra automatiquement avec le volume.</p>
+      </div>
       <div class="trend-row">
         <span class="chip indicatif"><span class="glyph"></span> Indicatif</span>
         <span class="trend-detail">n=0 sur 3 mois — volume insuffisant pour conclure</span>
@@ -4906,6 +5273,10 @@
         <p class="catperf-head">Rythme vs équipe par circuit — GT3</p>
         <p class="catperf-note">Pas encore de circuit avec n ≥ 3 pour Matheo Lantoine dans cette catégorie.</p>
       </div>
+      <div class="catperf">
+        <p class="catperf-head">Rythme de course réel</p>
+        <p class="catperf-note">Pas encore 5 tours propres enregistrés pour Matheo Lantoine (race_laps.json depuis le 28 août 2026 seulement) — reviendra automatiquement avec le volume.</p>
+      </div>
       <div class="trend-row">
         <span class="chip indicatif"><span class="glyph"></span> Indicatif</span>
         <span class="trend-detail">n=0 sur 3 mois — volume insuffisant pour conclure</span>
@@ -4983,6 +5354,10 @@
       <div class="catperf">
         <p class="catperf-head">Rythme vs équipe par circuit — Hyper</p>
         <p class="catperf-note">Pas encore de circuit avec n ≥ 3 pour Louca Touchard dans cette catégorie.</p>
+      </div>
+      <div class="catperf">
+        <p class="catperf-head">Rythme de course réel</p>
+        <p class="catperf-note">Pas encore 5 tours propres enregistrés pour Louca Touchard (race_laps.json depuis le 28 août 2026 seulement) — reviendra automatiquement avec le volume.</p>
       </div>
       <div class="trend-row">
         <span class="chip indicatif"><span class="glyph"></span> Indicatif</span>
@@ -5520,7 +5895,7 @@
         <p class="priority-name">Alex Thieffry</p>
         <div class="priority-ranks">
           <span class="rank-badge"><span class="cat-swatch" style="background:var(--cat-gt3)"></span><span class="rank-badge-pos">73<small>e pct.</small></span><span class="rank-badge-metric">DNF GT3 (27,1 %) · n=16 comparables</span></span>
-          <span class="rank-badge"><span class="cat-swatch" style="background:var(--cat-gt3)"></span><span class="rank-badge-pos">13<small>e pct.</small></span><span class="rank-badge-metric">rythme GT3 (-0,59 %) · n=16 comparables</span></span>
+          <span class="rank-badge"><span class="cat-swatch" style="background:var(--cat-gt3)"></span><span class="rank-badge-pos">13<small>e pct.</small></span><span class="rank-badge-metric">rythme GT3 (-0,62 %) · n=16 comparables</span></span>
         </div>
         <p class="priority-text">Priorité : la fiabilité pour Alex Thieffry en GT3 — c'est l'axe où il se classe le plus en retrait par rapport à ses coéquipiers dans cette catégorie.</p>
       </div>
@@ -5552,7 +5927,7 @@
         <p class="priority-name">Fanch Fressier</p>
         <div class="priority-ranks">
           <span class="rank-badge"><span class="cat-swatch" style="background:var(--cat-lmp3)"></span><span class="rank-badge-pos">75<small>e pct.</small></span><span class="rank-badge-metric">DNF LMP3 (17,6 %) · n=5 comparables</span></span>
-          <span class="rank-badge"><span class="cat-swatch" style="background:var(--cat-lmp3)"></span><span class="rank-badge-pos">25<small>e pct.</small></span><span class="rank-badge-metric">rythme LMP3 (-0,60 %) · n=5 comparables</span></span>
+          <span class="rank-badge"><span class="cat-swatch" style="background:var(--cat-lmp3)"></span><span class="rank-badge-pos">25<small>e pct.</small></span><span class="rank-badge-metric">rythme LMP3 (-0,51 %) · n=5 comparables</span></span>
         </div>
         <p class="priority-text">Priorité : la fiabilité pour Fanch Fressier en LMP3 — c'est l'axe où il se classe le plus en retrait par rapport à ses coéquipiers dans cette catégorie.</p>
       </div>
@@ -5576,7 +5951,7 @@
         <p class="priority-name">Ramco Ess</p>
         <div class="priority-ranks">
           <span class="rank-badge"><span class="cat-swatch" style="background:var(--cat-gt3)"></span><span class="rank-badge-pos">33<small>e pct.</small></span><span class="rank-badge-metric">DNF GT3 (12,5 %) · n=16 comparables</span></span>
-          <span class="rank-badge"><span class="cat-swatch" style="background:var(--cat-gt3)"></span><span class="rank-badge-pos">93<small>e pct.</small></span><span class="rank-badge-metric">rythme GT3 (+1,15 %) · n=16 comparables</span></span>
+          <span class="rank-badge"><span class="cat-swatch" style="background:var(--cat-gt3)"></span><span class="rank-badge-pos">87<small>e pct.</small></span><span class="rank-badge-metric">rythme GT3 (+1,15 %) · n=16 comparables</span></span>
         </div>
         <p class="priority-text">Priorité : le rythme pour Ramco Ess en GT3 — c'est l'axe où il se classe le plus en retrait par rapport à ses coéquipiers dans cette catégorie.</p>
       </div>
@@ -5584,7 +5959,7 @@
         <p class="priority-name">Toxycury Ingenieur</p>
         <div class="priority-ranks">
           <span class="rank-badge"><span class="cat-swatch" style="background:var(--cat-gt3)"></span><span class="rank-badge-pos">93<small>e pct.</small></span><span class="rank-badge-metric">DNF GT3 (50,0 %) · n=16 comparables</span></span>
-          <span class="rank-badge"><span class="cat-swatch" style="background:var(--cat-gt3)"></span><span class="rank-badge-pos">87<small>e pct.</small></span><span class="rank-badge-metric">rythme GT3 (+1,10 %) · n=16 comparables</span></span>
+          <span class="rank-badge"><span class="cat-swatch" style="background:var(--cat-gt3)"></span><span class="rank-badge-pos">93<small>e pct.</small></span><span class="rank-badge-metric">rythme GT3 (+1,29 %) · n=16 comparables</span></span>
         </div>
         <p class="priority-text">Priorité n°1 : la fiabilité pour Toxycury Ingenieur en GT3, l'axe le plus en retrait vs l'équipe. Priorité n°2 : le rythme, également en retrait dans cette catégorie.</p>
       </div>
@@ -6330,8 +6705,8 @@
               <text x="212.8" y="221.4">Thierry</text>
             </g>
             <g class="scatter-pt" data-drv="Alex_THIEFFRY">
-              <circle cx="118.0" cy="141.7" r="5"><title>Alex Thieffry : DNF/DQ 27,1 % (n=48), écart rythme -0,59 % (n=41)</title></circle>
-              <text x="125.0" y="135.7">Alex</text>
+              <circle cx="115.3" cy="141.7" r="5"><title>Alex Thieffry : DNF/DQ 27,1 % (n=48), écart rythme -0,62 % (n=41)</title></circle>
+              <text x="122.3" y="135.7">Alex</text>
             </g>
             <g class="scatter-pt" data-drv="Romain_LAFON">
               <circle cx="161.9" cy="140.9" r="5"><title>Romain Lafon : DNF/DQ 27,3 % (n=22), écart rythme -0,10 % (n=18)</title></circle>
@@ -6350,12 +6725,12 @@
               <text x="280.9" y="194.0">Ramco</text>
             </g>
             <g class="scatter-pt" data-drv="Titouan_FRESSIER">
-              <circle cx="116.2" cy="250.0" r="5"><title>Titouan Fressier : DNF/DQ 0,0 % (n=8), écart rythme -0,61 % (n=8)</title></circle>
-              <text x="123.2" y="244.0">Titouan</text>
+              <circle cx="114.4" cy="250.0" r="5"><title>Titouan Fressier : DNF/DQ 0,0 % (n=8), écart rythme -0,63 % (n=8)</title></circle>
+              <text x="121.4" y="244.0">Titouan</text>
             </g>
             <g class="scatter-pt" data-drv="Toxycury_INGENIEUR">
-              <circle cx="269.5" cy="50.0" r="5"><title>Toxycury Ingenieur : DNF/DQ 50,0 % (n=8), écart rythme +1,10 % (n=8)</title></circle>
-              <text x="276.5" y="44.0">Toxycury</text>
+              <circle cx="286.5" cy="50.0" r="5"><title>Toxycury Ingenieur : DNF/DQ 50,0 % (n=8), écart rythme +1,29 % (n=8)</title></circle>
+              <text x="293.5" y="44.0">Toxycury</text>
             </g>
             <g class="scatter-pt" data-drv="Clement_BERGER">
               <circle cx="215.7" cy="250.0" r="5"><title>Clement Berger : DNF/DQ 0,0 % (n=7), écart rythme +0,50 % (n=6)</title></circle>
@@ -6471,8 +6846,8 @@
               <text x="99.0" y="205.8">Jeremy</text>
             </g>
             <g class="scatter-pt" data-drv="Melvin_EVEN">
-              <circle cx="204.6" cy="122.7" r="5"><title>Melvin Even : DNF/DQ 33,3 % (n=15), écart rythme +1,27 % (n=15)</title></circle>
-              <text x="211.6" y="116.7">Melvin</text>
+              <circle cx="212.2" cy="122.7" r="5"><title>Melvin Even : DNF/DQ 33,3 % (n=15), écart rythme +1,37 % (n=15)</title></circle>
+              <text x="219.2" y="116.7">Melvin</text>
             </g>
             <g class="scatter-pt" data-drv="Yann_PARQUET">
               <circle cx="101.9" cy="250.0" r="5"><title>Yann Parquet : DNF/DQ 0,0 % (n=10), écart rythme -0,08 % (n=10)</title></circle>
@@ -6489,29 +6864,29 @@
         <div class="panel-head"><h2><span class="cat-swatch" style="background:var(--cat-lmp3)"></span>LMP3</h2></div>
         <div class="scatter-wrap">
           <svg class="scatter-mini-svg" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid meet" role="img" aria-label="DNF% vs rythme — LMP3">
-            <line class="scatter-axis" x1="162.3" y1="12" x2="162.3" y2="288"/>
+            <line class="scatter-axis" x1="168.2" y1="12" x2="168.2" y2="288"/>
             <line class="scatter-axis" x1="12" y1="250.0" x2="380.0" y2="250.0"/>
             <text class="scatter-axislabel" x="376.0" y="244.0" text-anchor="end">rythme +</text>
-            <text class="scatter-axislabel" x="168.3" y="18" text-anchor="start">DNF% +</text>
+            <text class="scatter-axislabel" x="174.2" y="18" text-anchor="start">DNF% +</text>
             <g class="scatter-pt" data-drv="Fanch_FRESSIER">
-              <circle cx="141.2" cy="108.8" r="5"><title>Fanch Fressier : DNF/DQ 17,6 % (n=17), écart rythme -0,60 % (n=16)</title></circle>
-              <text x="148.2" y="102.8">Fanch</text>
+              <circle cx="149.3" cy="108.8" r="5"><title>Fanch Fressier : DNF/DQ 17,6 % (n=17), écart rythme -0,51 % (n=16)</title></circle>
+              <text x="156.3" y="102.8">Fanch</text>
             </g>
             <g class="scatter-pt" data-drv="Loris_RENAULT">
-              <circle cx="338.5" cy="50.0" r="5"><title>Loris Renault : DNF/DQ 25,0 % (n=12), écart rythme +5,02 % (n=8)</title></circle>
+              <circle cx="338.5" cy="50.0" r="5"><title>Loris Renault : DNF/DQ 25,0 % (n=12), écart rythme +4,58 % (n=8)</title></circle>
               <text x="345.5" y="44.0">Loris</text>
             </g>
             <g class="scatter-pt" data-drv="Yann_PARQUET">
-              <circle cx="152.4" cy="161.1" r="5"><title>Yann Parquet : DNF/DQ 11,1 % (n=9), écart rythme -0,28 % (n=8)</title></circle>
-              <text x="159.4" y="155.1">Yann</text>
+              <circle cx="157.8" cy="161.1" r="5"><title>Yann Parquet : DNF/DQ 11,1 % (n=9), écart rythme -0,28 % (n=8)</title></circle>
+              <text x="164.8" y="155.1">Yann</text>
             </g>
             <g class="scatter-pt" data-drv="Titouan_FRESSIER">
               <circle cx="61.5" cy="250.0" r="5"><title>Titouan Fressier : DNF/DQ 0,0 % (n=7), écart rythme -2,87 % (n=6)</title></circle>
               <text x="68.5" y="244.0">Titouan</text>
             </g>
             <g class="scatter-pt" data-drv="Yann_LE_DOUSSAL">
-              <circle cx="178.4" cy="250.0" r="5"><title>Yann Le Doussal : DNF/DQ 0,0 % (n=5), écart rythme +0,46 % (n=5)</title></circle>
-              <text x="185.4" y="244.0">Yann</text>
+              <circle cx="185.3" cy="250.0" r="5"><title>Yann Le Doussal : DNF/DQ 0,0 % (n=5), écart rythme +0,46 % (n=5)</title></circle>
+              <text x="192.3" y="244.0">Yann</text>
             </g>
           </svg>
         </div>
@@ -6995,7 +7370,7 @@
             <tr data-drv="Fanch_FRESSIER">
               <td>Fanch Fressier</td><td>LMP3</td>
               <td class="mono">-0,22 <span class="hm-n">n=16</span></td>
-              <td class="mono">-0,6 % <span class="hm-n">n=16</span></td>
+              <td class="mono">-0,5 % <span class="hm-n">n=16</span></td>
               <td class="mono">+0 <span class="hm-n">n=14</span></td>
             </tr>
             <tr data-drv="Yann_LE_DOUSSAL">
@@ -7019,7 +7394,7 @@
             <tr data-drv="Toxycury_INGENIEUR">
               <td>Toxycury Ingenieur</td><td>GT3</td>
               <td class="mono">+3,38 <span class="hm-n">n=8</span></td>
-              <td class="mono">+1,1 % <span class="hm-n">n=8</span></td>
+              <td class="mono">+1,3 % <span class="hm-n">n=8</span></td>
               <td class="mono">+2 <span class="hm-n">n=4</span></td>
             </tr>
             <tr data-drv="Clement_BERGER">
@@ -7049,6 +7424,41 @@
           </tbody>
         </table>
       </div>
+    </div>
+    <div class="panel full">
+      <div class="panel-head">
+        <h2>Rythme sec vs mouillé</h2>
+        <span class="sub">écart % du rythme moyen mouillé vs sec par pilote et par catégorie (jamais mélangées entre elles), rythme de course réel (race_laps.json) — n ≥ 5 tours propres à la fois en sec et en mouillé</span>
+      </div>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Pilote</th><th>Catégorie</th><th class="num">Rythme sec</th><th class="num">Rythme mouillé</th><th class="num">Écart</th></tr></thead>
+          <tbody>
+            <tr data-drv="Jeremy_GO">
+              <td>Jeremy Go</td>
+              <td>LMP2_ELMS</td>
+              <td class="mono">2:07,524 <span class="hm-n">127 tours / 14 courses</span></td>
+              <td class="mono">1:36,807 <span class="hm-n">136 tours / 6 courses</span></td>
+              <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 62%, var(--bg-tile));">-24,1 %</span></td>
+            </tr>
+            <tr data-drv="Titouan_FRESSIER" class="low-n">
+              <td>Titouan Fressier</td>
+              <td>LMP2_ELMS</td>
+              <td class="mono">2:01,653 <span class="hm-n">35 tours / 5 courses</span></td>
+              <td class="mono">1:36,063 <span class="hm-n">75 tours / 3 courses</span></td>
+              <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 62%, var(--bg-tile));">-21,0 %</span></td>
+            </tr>
+            <tr data-drv="Melvin_EVEN" class="low-n">
+              <td>Melvin Even</td>
+              <td>GT3</td>
+              <td class="mono">2:01,033 <span class="hm-n">82 tours / 9 courses</span></td>
+              <td class="mono">1:48,105 <span class="hm-n">17 tours / 1 course</span></td>
+              <td class="cp-metric"><span class="cp-pill" style="background:color-mix(in oklab, var(--div-pos) 62%, var(--bg-tile));">-10,7 %</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="catperf-note">Positif = plus lent sous la pluie. Le signal météo est déduit uniquement du choix de gomme (Wet) — aucun champ pluie/piste humide direct dans l'API. Lignes estompées : n &lt; 5 courses distinctes en sec ou en mouillé (un rythme mouillé mesuré sur une seule course reste fragile, même à volume de tours élevé).</p>
     </div>
     <div class="panel full">
       <div class="panel-head">
