@@ -1309,7 +1309,7 @@
     <a href="#circuits" id="tab-page-circuits" data-page="page-circuits" data-hash="circuits" role="tab" aria-controls="page-circuits" aria-selected="false" tabindex="-1">Circuits</a>
     <a href="#resultats" id="tab-page-resultats" data-page="page-resultats" data-hash="resultats" data-group="page-resultats page-analyse" role="tab" aria-controls="page-resultats" aria-selected="false" tabindex="-1">Courses</a>
   </nav>
-  <div class="sync"><span class="dot"></span> Synchronisé — 25 octobre 2026, 19:13</div>
+  <div class="sync"><span class="dot"></span> Synchronisé — 25 octobre 2026, 19:19</div>
 </div>
 
 <div class="shell">
@@ -13388,7 +13388,9 @@
         if (!r.ok) throw { kind: 'http', status: r.status };
         return r.json();
       }).then(function (j) {
-        if (!j || typeof j.pilotes !== 'object' || j.version !== 1) throw { kind: 'format' };
+        // version_format = structure lue ici ; version = contenu (recalculs), qui peut changer sans casser la page
+        var fmt = (j && j.version_format !== undefined) ? j.version_format : 1;   // listes d'avant version_format : format 1
+        if (!j || typeof j.pilotes !== 'object' || fmt !== 1) throw { kind: 'format' };
         return j;
       });
     }
