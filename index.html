@@ -10,7 +10,7 @@
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Résultats CDDN</title>
+<title>Résultats ISATIS Esport</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500;600;700&family=Barlow:wght@400;500;600;700&family=Barlow+Semi+Condensed:wght@500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -18,17 +18,18 @@
 <style>
   :root {
     color-scheme: light;
-    --bg-app:      #f6f4fb;
+    --bg-app:      #f6f5f1;
     --bg-panel:    #ffffff;
-    --bg-card:     #fbfaff;
-    --bg-tile:     #f1eefb;
-    --ink-1:       #181530;
-    --ink-2:       #5b5580;
-    --ink-3:       #8b84ab;
-    --line:        rgba(24,21,48,0.10);
-    --line-strong: rgba(24,21,48,0.18);
-    --accent:      #c92f4a;
+    --bg-card:     #fbfaf7;
+    --bg-tile:     #f0eee7;
+    --ink-1:       #141414;
+    --ink-2:       #55524a;
+    --ink-3:       #87837a;
+    --line:        rgba(20,20,20,0.10);
+    --line-strong: rgba(20,20,20,0.18);
+    --accent:      #94700f;
     --accent-ink:  #ffffff;
+    --brand-gold:  #d5a535;
 
     --cat-hyper:    #cb2449;
     --cat-lmp2elms: #3252a4;
@@ -36,11 +37,11 @@
     --cat-lmp3:     #8163ce;
     --cat-gt3:      #057556;
     --cat-gte:      #c06401;
-    --cat-other:    #8b84ab;
+    --cat-other:    #87837a;
     --seq-1: #2a78d6;
 
     --status-good: #0ca30c;
-    --status-warn: #c98500;
+    --status-warn: #c25e00;
     --status-bad:  #c9433f;
 
     --div-pos: #2a78d6;
@@ -50,17 +51,18 @@
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
       color-scheme: dark;
-      --bg-app:      #100e1e;
-      --bg-panel:    #161329;
-      --bg-card:     #1c1836;
-      --bg-tile:     #211c42;
-      --ink-1:       #f4f2fb;
-      --ink-2:       #a9a2cf;
-      --ink-3:       #726c99;
-      --line:        rgba(244,242,251,0.09);
-      --line-strong: rgba(244,242,251,0.16);
-      --accent:      #ff5c78;
-      --accent-ink:  #1a0810;
+      --bg-app:      #0c0c0c;
+      --bg-panel:    #141414;
+      --bg-card:     #1a1a1a;
+      --bg-tile:     #222120;
+      --ink-1:       #f5f3ee;
+      --ink-2:       #b3ada0;
+      --ink-3:       #7d786d;
+      --line:        rgba(245,243,238,0.09);
+      --line-strong: rgba(245,243,238,0.16);
+      --accent:      #d5a535;
+      --accent-ink:  #141008;
+      --brand-gold:  #d5a535;
 
       --cat-hyper:    #e8445f;
       --cat-lmp2elms: #4d70c5;
@@ -68,11 +70,11 @@
       --cat-lmp3:     #8f72df;
       --cat-gt3:      #129670;
       --cat-gte:      #d67001;
-      --cat-other:    #726c99;
+      --cat-other:    #7d786d;
       --seq-1: #3987e5;
 
       --status-good: #2fbd2f;
-      --status-warn: #e0a52a;
+      --status-warn: #ee8a2c;
       --status-bad:  #e2665f;
 
       --div-pos: #3987e5;
@@ -81,17 +83,18 @@
   }
   :root[data-theme="dark"] {
     color-scheme: dark;
-    --bg-app:      #100e1e;
-    --bg-panel:    #161329;
-    --bg-card:     #1c1836;
-    --bg-tile:     #211c42;
-    --ink-1:       #f4f2fb;
-    --ink-2:       #a9a2cf;
-    --ink-3:       #726c99;
-    --line:        rgba(244,242,251,0.09);
-    --line-strong: rgba(244,242,251,0.16);
-    --accent:      #ff5c78;
-    --accent-ink:  #1a0810;
+    --bg-app:      #0c0c0c;
+    --bg-panel:    #141414;
+    --bg-card:     #1a1a1a;
+    --bg-tile:     #222120;
+    --ink-1:       #f5f3ee;
+    --ink-2:       #b3ada0;
+    --ink-3:       #7d786d;
+    --line:        rgba(245,243,238,0.09);
+    --line-strong: rgba(245,243,238,0.16);
+    --accent:      #d5a535;
+    --accent-ink:  #141008;
+    --brand-gold:  #d5a535;
 
     --cat-hyper:    #e8445f;
     --cat-lmp2elms: #4d70c5;
@@ -99,11 +102,11 @@
     --cat-lmp3:     #8f72df;
     --cat-gt3:      #129670;
     --cat-gte:      #d67001;
-    --cat-other:    #726c99;
+    --cat-other:    #7d786d;
     --seq-1: #3987e5;
 
     --status-good: #2fbd2f;
-    --status-warn: #e0a52a;
+    --status-warn: #ee8a2c;
     --status-bad:  #e2665f;
 
     --div-pos: #3987e5;
@@ -152,7 +155,20 @@
     letter-spacing: 0.03em;
     color: var(--ink-1);
   }
-  .brand .mark span { color: var(--accent); }
+  .brand .mark span { color: var(--brand-gold); }
+  .brand { align-items: center; }
+  .brand .mark-img { display: inline-flex; align-items: center; line-height: 0; }
+  .brand .mark-img img { height: 2.75rem; width: auto; }
+  .hero-emblem { display: flex; align-items: center; gap: clamp(1rem, 3vw, 2rem); }
+  .hero-emblem img { height: clamp(4.5rem, 12vw, 7.5rem); width: auto; flex: none; }
+  .logo-on-light { display: none !important; }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) .logo-on-dark { display: none !important; }
+    :root:not([data-theme="dark"]) .logo-on-light { display: inline-block !important; }
+  }
+  :root[data-theme="light"] .logo-on-dark { display: none !important; }
+  :root[data-theme="light"] .logo-on-light { display: inline-block !important; }
+  @media (max-width: 560px) { .hero-emblem img { display: none !important; } }
   .brand .tag { font-size: 0.78rem; color: var(--ink-3); }
 
   .nav { display: flex; gap: 1.6rem; }
@@ -1298,8 +1314,7 @@
 
 <div class="topbar">
   <div class="brand">
-    <span class="mark">CDDN<span>·</span>RACING</span>
-    <span class="tag">Le Mans Ultimate — endurance</span>
+<span class="mark">ISATIS<span>·</span>ESPORT</span>    <span class="tag">Le Mans Ultimate — endurance</span>
   </div>
   <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle-icon" aria-hidden="true">☰</span><span class="nav-toggle-label">Accueil</span></button>
   <nav class="nav" id="site-nav" role="tablist" aria-label="Sections du site">
@@ -1309,7 +1324,7 @@
     <a href="#circuits" id="tab-page-circuits" data-page="page-circuits" data-hash="circuits" role="tab" aria-controls="page-circuits" aria-selected="false" tabindex="-1">Circuits</a>
     <a href="#resultats" id="tab-page-resultats" data-page="page-resultats" data-hash="resultats" data-group="page-resultats page-analyse" role="tab" aria-controls="page-resultats" aria-selected="false" tabindex="-1">Courses</a>
   </nav>
-  <div class="sync"><span class="dot"></span> Synchronisé — 18 novembre 2026, 11:01</div>
+  <div class="sync"><span class="dot"></span> Synchronisé — 18 novembre 2026, 11:17</div>
 </div>
 
 <div class="shell">
@@ -1317,7 +1332,7 @@
 <section id="page-accueil" class="page active">
 
   <div class="page-head">
-    <p class="eyebrow">Le Mans Ultimate, d'après les fichiers de résultats du jeu</p>
+    <p class="eyebrow">ISATIS Esport · Le Mans Ultimate, d'après les fichiers de résultats du jeu</p>
     <h1 class="display">Résultats des pilotes suivis</h1>
     <p>9 pilotes suivis, 1 306 courses du 28 septembre 2024 au 17 novembre 2026, resynchronisées chaque heure. Chaque pilote est comparé à la classe de chaque course ; les autres voitures ne servent que de grille de référence.</p>
   </div>
@@ -2326,7 +2341,7 @@
                 <tr><td title="Le jeu ne dit pas qui est fautif : on compte les incidents où le pilote est impliqué.">Incidents impliqués par course<small class="cp-sub">152 incidents</small></td><td class="mono cp-metric">5,07 <span class="hm-n">n=30</span></td><td class="mono cp-metric">3,7 à 7,4 par voiture</td></tr>
                 <tr><td title="">dont contact avec une voiture<small class="cp-sub">113 au total</small></td><td class="mono cp-metric">3,77 <span class="hm-n">n=30</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">dont contact avec l'environnement<small class="cp-sub">39 au total</small></td><td class="mono cp-metric">1,30 <span class="hm-n">n=30</span></td><td class="mono cp-metric">—</td></tr>
-                <tr><td title="">dont avec un autre pilote CDDN<small class="cp-sub">0 au total</small></td><td class="mono cp-metric">0,00 <span class="hm-n">n=30</span></td><td class="mono cp-metric">—</td></tr>
+                <tr><td title="">dont avec un autre pilote ISATIS<small class="cp-sub">0 au total</small></td><td class="mono cp-metric">0,00 <span class="hm-n">n=30</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Pénalités par course</td><td class="mono cp-metric">0,10 <span class="hm-n">n=30</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Avertissements de limites de piste par course</td><td class="mono cp-metric">5,00 <span class="hm-n">n=30</span></td><td class="mono cp-metric">—</td></tr>
               </tbody>
@@ -2561,7 +2576,7 @@
                 <tr><td title="Le jeu ne dit pas qui est fautif : on compte les incidents où le pilote est impliqué.">Incidents impliqués par course<small class="cp-sub">63 incidents</small></td><td class="mono cp-metric">5,73 <span class="hm-n">n=11</span></td><td class="mono cp-metric">6,0 à 12,0 par voiture</td></tr>
                 <tr><td title="">dont contact avec une voiture<small class="cp-sub">27 au total</small></td><td class="mono cp-metric">2,45 <span class="hm-n">n=11</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">dont contact avec l'environnement<small class="cp-sub">36 au total</small></td><td class="mono cp-metric">3,27 <span class="hm-n">n=11</span></td><td class="mono cp-metric">—</td></tr>
-                <tr><td title="">dont avec un autre pilote CDDN<small class="cp-sub">2 au total</small></td><td class="mono cp-metric">0,18 <span class="hm-n">n=11</span></td><td class="mono cp-metric">—</td></tr>
+                <tr><td title="">dont avec un autre pilote ISATIS<small class="cp-sub">2 au total</small></td><td class="mono cp-metric">0,18 <span class="hm-n">n=11</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Pénalités par course</td><td class="mono cp-metric">0,27 <span class="hm-n">n=11</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Avertissements de limites de piste par course</td><td class="mono cp-metric">4,27 <span class="hm-n">n=11</span></td><td class="mono cp-metric">—</td></tr>
               </tbody>
@@ -2725,7 +2740,7 @@
                 <tr class="low-n"><td title="Le jeu ne dit pas qui est fautif : on compte les incidents où le pilote est impliqué.">Incidents impliqués par course<small class="cp-sub">23 incidents</small></td><td class="mono cp-metric">7,67 <span class="hm-n">n=3</span></td><td class="mono cp-metric">3,8 à 7,7 par voiture</td></tr>
                 <tr class="low-n"><td title="">dont contact avec une voiture<small class="cp-sub">20 au total</small></td><td class="mono cp-metric">6,67 <span class="hm-n">n=3</span></td><td class="mono cp-metric">—</td></tr>
                 <tr class="low-n"><td title="">dont contact avec l'environnement<small class="cp-sub">3 au total</small></td><td class="mono cp-metric">1,00 <span class="hm-n">n=3</span></td><td class="mono cp-metric">—</td></tr>
-                <tr class="low-n"><td title="">dont avec un autre pilote CDDN<small class="cp-sub">0 au total</small></td><td class="mono cp-metric">0,00 <span class="hm-n">n=3</span></td><td class="mono cp-metric">—</td></tr>
+                <tr class="low-n"><td title="">dont avec un autre pilote ISATIS<small class="cp-sub">0 au total</small></td><td class="mono cp-metric">0,00 <span class="hm-n">n=3</span></td><td class="mono cp-metric">—</td></tr>
                 <tr class="low-n"><td title="">Pénalités par course</td><td class="mono cp-metric">0,00 <span class="hm-n">n=3</span></td><td class="mono cp-metric">—</td></tr>
                 <tr class="low-n"><td title="">Avertissements de limites de piste par course</td><td class="mono cp-metric">5,67 <span class="hm-n">n=3</span></td><td class="mono cp-metric">—</td></tr>
               </tbody>
@@ -3402,7 +3417,7 @@
                 <tr><td title="Le jeu ne dit pas qui est fautif : on compte les incidents où le pilote est impliqué.">Incidents impliqués par course<small class="cp-sub">375 incidents</small></td><td class="mono cp-metric">6,58 <span class="hm-n">n=57</span></td><td class="mono cp-metric">4,2 à 8,4 par voiture</td></tr>
                 <tr><td title="">dont contact avec une voiture<small class="cp-sub">307 au total</small></td><td class="mono cp-metric">5,39 <span class="hm-n">n=57</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">dont contact avec l'environnement<small class="cp-sub">68 au total</small></td><td class="mono cp-metric">1,19 <span class="hm-n">n=57</span></td><td class="mono cp-metric">—</td></tr>
-                <tr><td title="">dont avec un autre pilote CDDN<small class="cp-sub">5 au total</small></td><td class="mono cp-metric">0,09 <span class="hm-n">n=57</span></td><td class="mono cp-metric">—</td></tr>
+                <tr><td title="">dont avec un autre pilote ISATIS<small class="cp-sub">5 au total</small></td><td class="mono cp-metric">0,09 <span class="hm-n">n=57</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Pénalités par course</td><td class="mono cp-metric">0,16 <span class="hm-n">n=57</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Avertissements de limites de piste par course</td><td class="mono cp-metric">3,33 <span class="hm-n">n=57</span></td><td class="mono cp-metric">—</td></tr>
               </tbody>
@@ -3731,7 +3746,7 @@
                 <tr><td title="Le jeu ne dit pas qui est fautif : on compte les incidents où le pilote est impliqué.">Incidents impliqués par course<small class="cp-sub">222 incidents</small></td><td class="mono cp-metric">10,09 <span class="hm-n">n=22</span></td><td class="mono cp-metric">4,3 à 8,7 par voiture</td></tr>
                 <tr><td title="">dont contact avec une voiture<small class="cp-sub">196 au total</small></td><td class="mono cp-metric">8,91 <span class="hm-n">n=22</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">dont contact avec l'environnement<small class="cp-sub">26 au total</small></td><td class="mono cp-metric">1,18 <span class="hm-n">n=22</span></td><td class="mono cp-metric">—</td></tr>
-                <tr><td title="">dont avec un autre pilote CDDN<small class="cp-sub">8 au total</small></td><td class="mono cp-metric">0,36 <span class="hm-n">n=22</span></td><td class="mono cp-metric">—</td></tr>
+                <tr><td title="">dont avec un autre pilote ISATIS<small class="cp-sub">8 au total</small></td><td class="mono cp-metric">0,36 <span class="hm-n">n=22</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Pénalités par course</td><td class="mono cp-metric">0,05 <span class="hm-n">n=22</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Avertissements de limites de piste par course</td><td class="mono cp-metric">2,18 <span class="hm-n">n=22</span></td><td class="mono cp-metric">—</td></tr>
               </tbody>
@@ -4027,7 +4042,7 @@
                 <tr><td title="Le jeu ne dit pas qui est fautif : on compte les incidents où le pilote est impliqué.">Incidents impliqués par course<small class="cp-sub">306 incidents</small></td><td class="mono cp-metric">8,50 <span class="hm-n">n=36</span></td><td class="mono cp-metric">7,3 à 14,5 par voiture</td></tr>
                 <tr><td title="">dont contact avec une voiture<small class="cp-sub">209 au total</small></td><td class="mono cp-metric">5,81 <span class="hm-n">n=36</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">dont contact avec l'environnement<small class="cp-sub">97 au total</small></td><td class="mono cp-metric">2,69 <span class="hm-n">n=36</span></td><td class="mono cp-metric">—</td></tr>
-                <tr><td title="">dont avec un autre pilote CDDN<small class="cp-sub">4 au total</small></td><td class="mono cp-metric">0,11 <span class="hm-n">n=36</span></td><td class="mono cp-metric">—</td></tr>
+                <tr><td title="">dont avec un autre pilote ISATIS<small class="cp-sub">4 au total</small></td><td class="mono cp-metric">0,11 <span class="hm-n">n=36</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Pénalités par course</td><td class="mono cp-metric">0,19 <span class="hm-n">n=36</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Avertissements de limites de piste par course</td><td class="mono cp-metric">2,50 <span class="hm-n">n=36</span></td><td class="mono cp-metric">—</td></tr>
               </tbody>
@@ -4283,7 +4298,7 @@
                 <tr><td title="Le jeu ne dit pas qui est fautif : on compte les incidents où le pilote est impliqué.">Incidents impliqués par course<small class="cp-sub">34 incidents</small></td><td class="mono cp-metric">4,25 <span class="hm-n">n=8</span></td><td class="mono cp-metric">3,5 à 7,0 par voiture</td></tr>
                 <tr><td title="">dont contact avec une voiture<small class="cp-sub">22 au total</small></td><td class="mono cp-metric">2,75 <span class="hm-n">n=8</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">dont contact avec l'environnement<small class="cp-sub">12 au total</small></td><td class="mono cp-metric">1,50 <span class="hm-n">n=8</span></td><td class="mono cp-metric">—</td></tr>
-                <tr><td title="">dont avec un autre pilote CDDN<small class="cp-sub">0 au total</small></td><td class="mono cp-metric">0,00 <span class="hm-n">n=8</span></td><td class="mono cp-metric">—</td></tr>
+                <tr><td title="">dont avec un autre pilote ISATIS<small class="cp-sub">0 au total</small></td><td class="mono cp-metric">0,00 <span class="hm-n">n=8</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Pénalités par course</td><td class="mono cp-metric">0,38 <span class="hm-n">n=8</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Avertissements de limites de piste par course</td><td class="mono cp-metric">2,25 <span class="hm-n">n=8</span></td><td class="mono cp-metric">—</td></tr>
               </tbody>
@@ -4848,7 +4863,7 @@
                 <tr><td title="Le jeu ne dit pas qui est fautif : on compte les incidents où le pilote est impliqué.">Incidents impliqués par course<small class="cp-sub">40 incidents</small></td><td class="mono cp-metric">5,00 <span class="hm-n">n=8</span></td><td class="mono cp-metric">4,1 à 8,1 par voiture</td></tr>
                 <tr><td title="">dont contact avec une voiture<small class="cp-sub">31 au total</small></td><td class="mono cp-metric">3,88 <span class="hm-n">n=8</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">dont contact avec l'environnement<small class="cp-sub">9 au total</small></td><td class="mono cp-metric">1,12 <span class="hm-n">n=8</span></td><td class="mono cp-metric">—</td></tr>
-                <tr><td title="">dont avec un autre pilote CDDN<small class="cp-sub">0 au total</small></td><td class="mono cp-metric">0,00 <span class="hm-n">n=8</span></td><td class="mono cp-metric">—</td></tr>
+                <tr><td title="">dont avec un autre pilote ISATIS<small class="cp-sub">0 au total</small></td><td class="mono cp-metric">0,00 <span class="hm-n">n=8</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Pénalités par course</td><td class="mono cp-metric">0,25 <span class="hm-n">n=8</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Avertissements de limites de piste par course</td><td class="mono cp-metric">4,75 <span class="hm-n">n=8</span></td><td class="mono cp-metric">—</td></tr>
               </tbody>
@@ -5511,7 +5526,7 @@
                 <tr><td title="Le jeu ne dit pas qui est fautif : on compte les incidents où le pilote est impliqué.">Incidents impliqués par course<small class="cp-sub">284 incidents</small></td><td class="mono cp-metric">8,11 <span class="hm-n">n=35</span></td><td class="mono cp-metric">6,7 à 13,3 par voiture</td></tr>
                 <tr><td title="">dont contact avec une voiture<small class="cp-sub">228 au total</small></td><td class="mono cp-metric">6,51 <span class="hm-n">n=35</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">dont contact avec l'environnement<small class="cp-sub">56 au total</small></td><td class="mono cp-metric">1,60 <span class="hm-n">n=35</span></td><td class="mono cp-metric">—</td></tr>
-                <tr><td title="">dont avec un autre pilote CDDN<small class="cp-sub">0 au total</small></td><td class="mono cp-metric">0,00 <span class="hm-n">n=35</span></td><td class="mono cp-metric">—</td></tr>
+                <tr><td title="">dont avec un autre pilote ISATIS<small class="cp-sub">0 au total</small></td><td class="mono cp-metric">0,00 <span class="hm-n">n=35</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Pénalités par course</td><td class="mono cp-metric">0,11 <span class="hm-n">n=35</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Avertissements de limites de piste par course</td><td class="mono cp-metric">3,74 <span class="hm-n">n=35</span></td><td class="mono cp-metric">—</td></tr>
               </tbody>
@@ -5725,7 +5740,7 @@
                 <tr><td title="Le jeu ne dit pas qui est fautif : on compte les incidents où le pilote est impliqué.">Incidents impliqués par course<small class="cp-sub">27 incidents</small></td><td class="mono cp-metric">4,50 <span class="hm-n">n=6</span></td><td class="mono cp-metric">4,3 à 8,6 par voiture</td></tr>
                 <tr><td title="">dont contact avec une voiture<small class="cp-sub">24 au total</small></td><td class="mono cp-metric">4,00 <span class="hm-n">n=6</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">dont contact avec l'environnement<small class="cp-sub">3 au total</small></td><td class="mono cp-metric">0,50 <span class="hm-n">n=6</span></td><td class="mono cp-metric">—</td></tr>
-                <tr><td title="">dont avec un autre pilote CDDN<small class="cp-sub">0 au total</small></td><td class="mono cp-metric">0,00 <span class="hm-n">n=6</span></td><td class="mono cp-metric">—</td></tr>
+                <tr><td title="">dont avec un autre pilote ISATIS<small class="cp-sub">0 au total</small></td><td class="mono cp-metric">0,00 <span class="hm-n">n=6</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Pénalités par course</td><td class="mono cp-metric">0,00 <span class="hm-n">n=6</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Avertissements de limites de piste par course</td><td class="mono cp-metric">1,67 <span class="hm-n">n=6</span></td><td class="mono cp-metric">—</td></tr>
               </tbody>
@@ -5920,7 +5935,7 @@
                 <tr><td title="Le jeu ne dit pas qui est fautif : on compte les incidents où le pilote est impliqué.">Incidents impliqués par course<small class="cp-sub">43 incidents</small></td><td class="mono cp-metric">7,17 <span class="hm-n">n=6</span></td><td class="mono cp-metric">4,7 à 9,4 par voiture</td></tr>
                 <tr><td title="">dont contact avec une voiture<small class="cp-sub">36 au total</small></td><td class="mono cp-metric">6,00 <span class="hm-n">n=6</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">dont contact avec l'environnement<small class="cp-sub">7 au total</small></td><td class="mono cp-metric">1,17 <span class="hm-n">n=6</span></td><td class="mono cp-metric">—</td></tr>
-                <tr><td title="">dont avec un autre pilote CDDN<small class="cp-sub">0 au total</small></td><td class="mono cp-metric">0,00 <span class="hm-n">n=6</span></td><td class="mono cp-metric">—</td></tr>
+                <tr><td title="">dont avec un autre pilote ISATIS<small class="cp-sub">0 au total</small></td><td class="mono cp-metric">0,00 <span class="hm-n">n=6</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Pénalités par course</td><td class="mono cp-metric">0,00 <span class="hm-n">n=6</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Avertissements de limites de piste par course</td><td class="mono cp-metric">1,50 <span class="hm-n">n=6</span></td><td class="mono cp-metric">—</td></tr>
               </tbody>
@@ -6072,7 +6087,7 @@
                 <tr><td title="Le jeu ne dit pas qui est fautif : on compte les incidents où le pilote est impliqué.">Incidents impliqués par course<small class="cp-sub">35 incidents</small></td><td class="mono cp-metric">7,00 <span class="hm-n">n=5</span></td><td class="mono cp-metric">4,7 à 9,3 par voiture</td></tr>
                 <tr><td title="">dont contact avec une voiture<small class="cp-sub">14 au total</small></td><td class="mono cp-metric">2,80 <span class="hm-n">n=5</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">dont contact avec l'environnement<small class="cp-sub">21 au total</small></td><td class="mono cp-metric">4,20 <span class="hm-n">n=5</span></td><td class="mono cp-metric">—</td></tr>
-                <tr><td title="">dont avec un autre pilote CDDN<small class="cp-sub">1 au total</small></td><td class="mono cp-metric">0,20 <span class="hm-n">n=5</span></td><td class="mono cp-metric">—</td></tr>
+                <tr><td title="">dont avec un autre pilote ISATIS<small class="cp-sub">1 au total</small></td><td class="mono cp-metric">0,20 <span class="hm-n">n=5</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Pénalités par course</td><td class="mono cp-metric">0,00 <span class="hm-n">n=5</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Avertissements de limites de piste par course</td><td class="mono cp-metric">1,20 <span class="hm-n">n=5</span></td><td class="mono cp-metric">—</td></tr>
               </tbody>
@@ -6733,7 +6748,7 @@
                 <tr><td title="Le jeu ne dit pas qui est fautif : on compte les incidents où le pilote est impliqué.">Incidents impliqués par course<small class="cp-sub">227 incidents</small></td><td class="mono cp-metric">7,09 <span class="hm-n">n=32</span></td><td class="mono cp-metric">4,9 à 9,8 par voiture</td></tr>
                 <tr><td title="">dont contact avec une voiture<small class="cp-sub">163 au total</small></td><td class="mono cp-metric">5,09 <span class="hm-n">n=32</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">dont contact avec l'environnement<small class="cp-sub">64 au total</small></td><td class="mono cp-metric">2,00 <span class="hm-n">n=32</span></td><td class="mono cp-metric">—</td></tr>
-                <tr><td title="">dont avec un autre pilote CDDN<small class="cp-sub">15 au total</small></td><td class="mono cp-metric">0,47 <span class="hm-n">n=32</span></td><td class="mono cp-metric">—</td></tr>
+                <tr><td title="">dont avec un autre pilote ISATIS<small class="cp-sub">15 au total</small></td><td class="mono cp-metric">0,47 <span class="hm-n">n=32</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Pénalités par course</td><td class="mono cp-metric">0,19 <span class="hm-n">n=32</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Avertissements de limites de piste par course</td><td class="mono cp-metric">3,38 <span class="hm-n">n=32</span></td><td class="mono cp-metric">—</td></tr>
               </tbody>
@@ -7000,7 +7015,7 @@
                 <tr><td title="Le jeu ne dit pas qui est fautif : on compte les incidents où le pilote est impliqué.">Incidents impliqués par course<small class="cp-sub">153 incidents</small></td><td class="mono cp-metric">8,05 <span class="hm-n">n=19</span></td><td class="mono cp-metric">7,6 à 15,1 par voiture</td></tr>
                 <tr><td title="">dont contact avec une voiture<small class="cp-sub">120 au total</small></td><td class="mono cp-metric">6,32 <span class="hm-n">n=19</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">dont contact avec l'environnement<small class="cp-sub">33 au total</small></td><td class="mono cp-metric">1,74 <span class="hm-n">n=19</span></td><td class="mono cp-metric">—</td></tr>
-                <tr><td title="">dont avec un autre pilote CDDN<small class="cp-sub">3 au total</small></td><td class="mono cp-metric">0,16 <span class="hm-n">n=19</span></td><td class="mono cp-metric">—</td></tr>
+                <tr><td title="">dont avec un autre pilote ISATIS<small class="cp-sub">3 au total</small></td><td class="mono cp-metric">0,16 <span class="hm-n">n=19</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Pénalités par course</td><td class="mono cp-metric">0,26 <span class="hm-n">n=19</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Avertissements de limites de piste par course</td><td class="mono cp-metric">2,21 <span class="hm-n">n=19</span></td><td class="mono cp-metric">—</td></tr>
               </tbody>
@@ -7740,7 +7755,7 @@
                 <tr><td title="Le jeu ne dit pas qui est fautif : on compte les incidents où le pilote est impliqué.">Incidents impliqués par course<small class="cp-sub">321 incidents</small></td><td class="mono cp-metric">8,45 <span class="hm-n">n=38</span></td><td class="mono cp-metric">5,3 à 10,6 par voiture</td></tr>
                 <tr><td title="">dont contact avec une voiture<small class="cp-sub">204 au total</small></td><td class="mono cp-metric">5,37 <span class="hm-n">n=38</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">dont contact avec l'environnement<small class="cp-sub">117 au total</small></td><td class="mono cp-metric">3,08 <span class="hm-n">n=38</span></td><td class="mono cp-metric">—</td></tr>
-                <tr><td title="">dont avec un autre pilote CDDN<small class="cp-sub">9 au total</small></td><td class="mono cp-metric">0,24 <span class="hm-n">n=38</span></td><td class="mono cp-metric">—</td></tr>
+                <tr><td title="">dont avec un autre pilote ISATIS<small class="cp-sub">9 au total</small></td><td class="mono cp-metric">0,24 <span class="hm-n">n=38</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Pénalités par course</td><td class="mono cp-metric">0,16 <span class="hm-n">n=38</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Avertissements de limites de piste par course</td><td class="mono cp-metric">1,92 <span class="hm-n">n=38</span></td><td class="mono cp-metric">—</td></tr>
               </tbody>
@@ -8049,7 +8064,7 @@
                 <tr><td title="Le jeu ne dit pas qui est fautif : on compte les incidents où le pilote est impliqué.">Incidents impliqués par course<small class="cp-sub">41 incidents</small></td><td class="mono cp-metric">4,10 <span class="hm-n">n=10</span></td><td class="mono cp-metric">4,3 à 8,6 par voiture</td></tr>
                 <tr><td title="">dont contact avec une voiture<small class="cp-sub">35 au total</small></td><td class="mono cp-metric">3,50 <span class="hm-n">n=10</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">dont contact avec l'environnement<small class="cp-sub">6 au total</small></td><td class="mono cp-metric">0,60 <span class="hm-n">n=10</span></td><td class="mono cp-metric">—</td></tr>
-                <tr><td title="">dont avec un autre pilote CDDN<small class="cp-sub">0 au total</small></td><td class="mono cp-metric">0,00 <span class="hm-n">n=10</span></td><td class="mono cp-metric">—</td></tr>
+                <tr><td title="">dont avec un autre pilote ISATIS<small class="cp-sub">0 au total</small></td><td class="mono cp-metric">0,00 <span class="hm-n">n=10</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Pénalités par course</td><td class="mono cp-metric">0,00 <span class="hm-n">n=10</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Avertissements de limites de piste par course</td><td class="mono cp-metric">1,00 <span class="hm-n">n=10</span></td><td class="mono cp-metric">—</td></tr>
               </tbody>
@@ -8326,7 +8341,7 @@
                 <tr><td title="Le jeu ne dit pas qui est fautif : on compte les incidents où le pilote est impliqué.">Incidents impliqués par course<small class="cp-sub">24 incidents</small></td><td class="mono cp-metric">3,43 <span class="hm-n">n=7</span></td><td class="mono cp-metric">4,4 à 8,8 par voiture</td></tr>
                 <tr><td title="">dont contact avec une voiture<small class="cp-sub">22 au total</small></td><td class="mono cp-metric">3,14 <span class="hm-n">n=7</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">dont contact avec l'environnement<small class="cp-sub">2 au total</small></td><td class="mono cp-metric">0,29 <span class="hm-n">n=7</span></td><td class="mono cp-metric">—</td></tr>
-                <tr><td title="">dont avec un autre pilote CDDN<small class="cp-sub">0 au total</small></td><td class="mono cp-metric">0,00 <span class="hm-n">n=7</span></td><td class="mono cp-metric">—</td></tr>
+                <tr><td title="">dont avec un autre pilote ISATIS<small class="cp-sub">0 au total</small></td><td class="mono cp-metric">0,00 <span class="hm-n">n=7</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Pénalités par course</td><td class="mono cp-metric">0,00 <span class="hm-n">n=7</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Avertissements de limites de piste par course</td><td class="mono cp-metric">1,57 <span class="hm-n">n=7</span></td><td class="mono cp-metric">—</td></tr>
               </tbody>
@@ -9018,7 +9033,7 @@
                 <tr><td title="Le jeu ne dit pas qui est fautif : on compte les incidents où le pilote est impliqué.">Incidents impliqués par course<small class="cp-sub">119 incidents</small></td><td class="mono cp-metric">11,90 <span class="hm-n">n=10</span></td><td class="mono cp-metric">9,0 à 18,1 par voiture</td></tr>
                 <tr><td title="">dont contact avec une voiture<small class="cp-sub">87 au total</small></td><td class="mono cp-metric">8,70 <span class="hm-n">n=10</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">dont contact avec l'environnement<small class="cp-sub">32 au total</small></td><td class="mono cp-metric">3,20 <span class="hm-n">n=10</span></td><td class="mono cp-metric">—</td></tr>
-                <tr><td title="">dont avec un autre pilote CDDN<small class="cp-sub">8 au total</small></td><td class="mono cp-metric">0,80 <span class="hm-n">n=10</span></td><td class="mono cp-metric">—</td></tr>
+                <tr><td title="">dont avec un autre pilote ISATIS<small class="cp-sub">8 au total</small></td><td class="mono cp-metric">0,80 <span class="hm-n">n=10</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Pénalités par course</td><td class="mono cp-metric">0,20 <span class="hm-n">n=10</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Avertissements de limites de piste par course</td><td class="mono cp-metric">4,50 <span class="hm-n">n=10</span></td><td class="mono cp-metric">—</td></tr>
               </tbody>
@@ -9278,7 +9293,7 @@
                 <tr><td title="Le jeu ne dit pas qui est fautif : on compte les incidents où le pilote est impliqué.">Incidents impliqués par course<small class="cp-sub">133 incidents</small></td><td class="mono cp-metric">7,82 <span class="hm-n">n=17</span></td><td class="mono cp-metric">4,9 à 9,8 par voiture</td></tr>
                 <tr><td title="">dont contact avec une voiture<small class="cp-sub">123 au total</small></td><td class="mono cp-metric">7,24 <span class="hm-n">n=17</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">dont contact avec l'environnement<small class="cp-sub">10 au total</small></td><td class="mono cp-metric">0,59 <span class="hm-n">n=17</span></td><td class="mono cp-metric">—</td></tr>
-                <tr><td title="">dont avec un autre pilote CDDN<small class="cp-sub">5 au total</small></td><td class="mono cp-metric">0,29 <span class="hm-n">n=17</span></td><td class="mono cp-metric">—</td></tr>
+                <tr><td title="">dont avec un autre pilote ISATIS<small class="cp-sub">5 au total</small></td><td class="mono cp-metric">0,29 <span class="hm-n">n=17</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Pénalités par course</td><td class="mono cp-metric">0,06 <span class="hm-n">n=17</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Avertissements de limites de piste par course</td><td class="mono cp-metric">5,18 <span class="hm-n">n=17</span></td><td class="mono cp-metric">—</td></tr>
               </tbody>
@@ -9558,7 +9573,7 @@
                 <tr><td title="Le jeu ne dit pas qui est fautif : on compte les incidents où le pilote est impliqué.">Incidents impliqués par course<small class="cp-sub">58 incidents</small></td><td class="mono cp-metric">6,44 <span class="hm-n">n=9</span></td><td class="mono cp-metric">5,3 à 10,7 par voiture</td></tr>
                 <tr><td title="">dont contact avec une voiture<small class="cp-sub">41 au total</small></td><td class="mono cp-metric">4,56 <span class="hm-n">n=9</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">dont contact avec l'environnement<small class="cp-sub">17 au total</small></td><td class="mono cp-metric">1,89 <span class="hm-n">n=9</span></td><td class="mono cp-metric">—</td></tr>
-                <tr><td title="">dont avec un autre pilote CDDN<small class="cp-sub">15 au total</small></td><td class="mono cp-metric">1,67 <span class="hm-n">n=9</span></td><td class="mono cp-metric">—</td></tr>
+                <tr><td title="">dont avec un autre pilote ISATIS<small class="cp-sub">15 au total</small></td><td class="mono cp-metric">1,67 <span class="hm-n">n=9</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Pénalités par course</td><td class="mono cp-metric">0,33 <span class="hm-n">n=9</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Avertissements de limites de piste par course</td><td class="mono cp-metric">5,44 <span class="hm-n">n=9</span></td><td class="mono cp-metric">—</td></tr>
               </tbody>
@@ -9772,7 +9787,7 @@
                 <tr><td title="Le jeu ne dit pas qui est fautif : on compte les incidents où le pilote est impliqué.">Incidents impliqués par course<small class="cp-sub">96 incidents</small></td><td class="mono cp-metric">5,33 <span class="hm-n">n=18</span></td><td class="mono cp-metric">3,2 à 6,5 par voiture</td></tr>
                 <tr><td title="">dont contact avec une voiture<small class="cp-sub">78 au total</small></td><td class="mono cp-metric">4,33 <span class="hm-n">n=18</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">dont contact avec l'environnement<small class="cp-sub">18 au total</small></td><td class="mono cp-metric">1,00 <span class="hm-n">n=18</span></td><td class="mono cp-metric">—</td></tr>
-                <tr><td title="">dont avec un autre pilote CDDN<small class="cp-sub">7 au total</small></td><td class="mono cp-metric">0,39 <span class="hm-n">n=18</span></td><td class="mono cp-metric">—</td></tr>
+                <tr><td title="">dont avec un autre pilote ISATIS<small class="cp-sub">7 au total</small></td><td class="mono cp-metric">0,39 <span class="hm-n">n=18</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Pénalités par course</td><td class="mono cp-metric">0,17 <span class="hm-n">n=18</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Avertissements de limites de piste par course</td><td class="mono cp-metric">4,11 <span class="hm-n">n=18</span></td><td class="mono cp-metric">—</td></tr>
               </tbody>
@@ -9988,7 +10003,7 @@
                 <tr><td title="Le jeu ne dit pas qui est fautif : on compte les incidents où le pilote est impliqué.">Incidents impliqués par course<small class="cp-sub">44 incidents</small></td><td class="mono cp-metric">7,33 <span class="hm-n">n=6</span></td><td class="mono cp-metric">4,0 à 8,0 par voiture</td></tr>
                 <tr><td title="">dont contact avec une voiture<small class="cp-sub">40 au total</small></td><td class="mono cp-metric">6,67 <span class="hm-n">n=6</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">dont contact avec l'environnement<small class="cp-sub">4 au total</small></td><td class="mono cp-metric">0,67 <span class="hm-n">n=6</span></td><td class="mono cp-metric">—</td></tr>
-                <tr><td title="">dont avec un autre pilote CDDN<small class="cp-sub">7 au total</small></td><td class="mono cp-metric">1,17 <span class="hm-n">n=6</span></td><td class="mono cp-metric">—</td></tr>
+                <tr><td title="">dont avec un autre pilote ISATIS<small class="cp-sub">7 au total</small></td><td class="mono cp-metric">1,17 <span class="hm-n">n=6</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Pénalités par course</td><td class="mono cp-metric">0,00 <span class="hm-n">n=6</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Avertissements de limites de piste par course</td><td class="mono cp-metric">0,33 <span class="hm-n">n=6</span></td><td class="mono cp-metric">—</td></tr>
               </tbody>
@@ -10470,7 +10485,7 @@
                 <tr><td title="Le jeu ne dit pas qui est fautif : on compte les incidents où le pilote est impliqué.">Incidents impliqués par course<small class="cp-sub">54 incidents</small></td><td class="mono cp-metric">5,40 <span class="hm-n">n=10</span></td><td class="mono cp-metric">4,3 à 8,7 par voiture</td></tr>
                 <tr><td title="">dont contact avec une voiture<small class="cp-sub">30 au total</small></td><td class="mono cp-metric">3,00 <span class="hm-n">n=10</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">dont contact avec l'environnement<small class="cp-sub">24 au total</small></td><td class="mono cp-metric">2,40 <span class="hm-n">n=10</span></td><td class="mono cp-metric">—</td></tr>
-                <tr><td title="">dont avec un autre pilote CDDN<small class="cp-sub">0 au total</small></td><td class="mono cp-metric">0,00 <span class="hm-n">n=10</span></td><td class="mono cp-metric">—</td></tr>
+                <tr><td title="">dont avec un autre pilote ISATIS<small class="cp-sub">0 au total</small></td><td class="mono cp-metric">0,00 <span class="hm-n">n=10</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Pénalités par course</td><td class="mono cp-metric">0,10 <span class="hm-n">n=10</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Avertissements de limites de piste par course</td><td class="mono cp-metric">2,90 <span class="hm-n">n=10</span></td><td class="mono cp-metric">—</td></tr>
               </tbody>
@@ -11170,7 +11185,7 @@
                 <tr><td title="Le jeu ne dit pas qui est fautif : on compte les incidents où le pilote est impliqué.">Incidents impliqués par course<small class="cp-sub">208 incidents</small></td><td class="mono cp-metric">8,00 <span class="hm-n">n=26</span></td><td class="mono cp-metric">5,1 à 10,1 par voiture</td></tr>
                 <tr><td title="">dont contact avec une voiture<small class="cp-sub">175 au total</small></td><td class="mono cp-metric">6,73 <span class="hm-n">n=26</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">dont contact avec l'environnement<small class="cp-sub">33 au total</small></td><td class="mono cp-metric">1,27 <span class="hm-n">n=26</span></td><td class="mono cp-metric">—</td></tr>
-                <tr><td title="">dont avec un autre pilote CDDN<small class="cp-sub">13 au total</small></td><td class="mono cp-metric">0,50 <span class="hm-n">n=26</span></td><td class="mono cp-metric">—</td></tr>
+                <tr><td title="">dont avec un autre pilote ISATIS<small class="cp-sub">13 au total</small></td><td class="mono cp-metric">0,50 <span class="hm-n">n=26</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Pénalités par course</td><td class="mono cp-metric">0,31 <span class="hm-n">n=26</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Avertissements de limites de piste par course</td><td class="mono cp-metric">6,92 <span class="hm-n">n=26</span></td><td class="mono cp-metric">—</td></tr>
               </tbody>
@@ -11410,7 +11425,7 @@
                 <tr><td title="Le jeu ne dit pas qui est fautif : on compte les incidents où le pilote est impliqué.">Incidents impliqués par course<small class="cp-sub">52 incidents</small></td><td class="mono cp-metric">4,00 <span class="hm-n">n=13</span></td><td class="mono cp-metric">4,2 à 8,3 par voiture</td></tr>
                 <tr><td title="">dont contact avec une voiture<small class="cp-sub">47 au total</small></td><td class="mono cp-metric">3,62 <span class="hm-n">n=13</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">dont contact avec l'environnement<small class="cp-sub">5 au total</small></td><td class="mono cp-metric">0,38 <span class="hm-n">n=13</span></td><td class="mono cp-metric">—</td></tr>
-                <tr><td title="">dont avec un autre pilote CDDN<small class="cp-sub">4 au total</small></td><td class="mono cp-metric">0,31 <span class="hm-n">n=13</span></td><td class="mono cp-metric">—</td></tr>
+                <tr><td title="">dont avec un autre pilote ISATIS<small class="cp-sub">4 au total</small></td><td class="mono cp-metric">0,31 <span class="hm-n">n=13</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Pénalités par course</td><td class="mono cp-metric">0,08 <span class="hm-n">n=13</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Avertissements de limites de piste par course</td><td class="mono cp-metric">3,85 <span class="hm-n">n=13</span></td><td class="mono cp-metric">—</td></tr>
               </tbody>
@@ -11610,7 +11625,7 @@
                 <tr><td title="Le jeu ne dit pas qui est fautif : on compte les incidents où le pilote est impliqué.">Incidents impliqués par course<small class="cp-sub">115 incidents</small></td><td class="mono cp-metric">8,85 <span class="hm-n">n=13</span></td><td class="mono cp-metric">5,9 à 11,8 par voiture</td></tr>
                 <tr><td title="">dont contact avec une voiture<small class="cp-sub">102 au total</small></td><td class="mono cp-metric">7,85 <span class="hm-n">n=13</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">dont contact avec l'environnement<small class="cp-sub">13 au total</small></td><td class="mono cp-metric">1,00 <span class="hm-n">n=13</span></td><td class="mono cp-metric">—</td></tr>
-                <tr><td title="">dont avec un autre pilote CDDN<small class="cp-sub">4 au total</small></td><td class="mono cp-metric">0,31 <span class="hm-n">n=13</span></td><td class="mono cp-metric">—</td></tr>
+                <tr><td title="">dont avec un autre pilote ISATIS<small class="cp-sub">4 au total</small></td><td class="mono cp-metric">0,31 <span class="hm-n">n=13</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Pénalités par course</td><td class="mono cp-metric">0,08 <span class="hm-n">n=13</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Avertissements de limites de piste par course</td><td class="mono cp-metric">3,77 <span class="hm-n">n=13</span></td><td class="mono cp-metric">—</td></tr>
               </tbody>
@@ -11800,7 +11815,7 @@
                 <tr><td title="Le jeu ne dit pas qui est fautif : on compte les incidents où le pilote est impliqué.">Incidents impliqués par course<small class="cp-sub">65 incidents</small></td><td class="mono cp-metric">5,91 <span class="hm-n">n=11</span></td><td class="mono cp-metric">3,2 à 6,5 par voiture</td></tr>
                 <tr><td title="">dont contact avec une voiture<small class="cp-sub">65 au total</small></td><td class="mono cp-metric">5,91 <span class="hm-n">n=11</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">dont contact avec l'environnement<small class="cp-sub">0 au total</small></td><td class="mono cp-metric">0,00 <span class="hm-n">n=11</span></td><td class="mono cp-metric">—</td></tr>
-                <tr><td title="">dont avec un autre pilote CDDN<small class="cp-sub">1 au total</small></td><td class="mono cp-metric">0,09 <span class="hm-n">n=11</span></td><td class="mono cp-metric">—</td></tr>
+                <tr><td title="">dont avec un autre pilote ISATIS<small class="cp-sub">1 au total</small></td><td class="mono cp-metric">0,09 <span class="hm-n">n=11</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Pénalités par course</td><td class="mono cp-metric">0,18 <span class="hm-n">n=11</span></td><td class="mono cp-metric">—</td></tr>
                 <tr><td title="">Avertissements de limites de piste par course</td><td class="mono cp-metric">3,91 <span class="hm-n">n=11</span></td><td class="mono cp-metric">—</td></tr>
               </tbody>
@@ -15115,19 +15130,19 @@
       <div class="hot-rate">8,81<small>par 100 km</small></div>
     </div>
     <div class="hot-row low-n">
-      <div class="hot-name">LeMansWEC_Mulsanne<small>n=3 courses · 39 incidents · dont 9 entre pilotes CDDN</small></div>
+      <div class="hot-name">LeMansWEC_Mulsanne<small>n=3 courses · 39 incidents · dont 9 entre pilotes ISATIS</small></div>
       <div class="cause-bar" style="width:88.2%;" role="img" aria-label="LeMansWEC_Mulsanne : 7,77 incidents par 100 km, dont 32 contacts et 7 avec l'environnement">
 <span class="cause-seg cs1" style="flex:82.1 1 0;" title="Contact avec une voiture : 32">32</span><span class="cause-seg cs2" style="flex:17.9 1 0;" title="Environnement : 7">7</span>      </div>
       <div class="hot-rate">7,77<small>par 100 km</small></div>
     </div>
     <div class="hot-row">
-      <div class="hot-name">MonzaWEC<small>n=75 courses · 597 incidents · dont 6 entre pilotes CDDN</small></div>
+      <div class="hot-name">MonzaWEC<small>n=75 courses · 597 incidents · dont 6 entre pilotes ISATIS</small></div>
       <div class="cause-bar" style="width:85.4%;" role="img" aria-label="MonzaWEC : 7,52 incidents par 100 km, dont 449 contacts et 148 avec l'environnement">
 <span class="cause-seg cs1" style="flex:75.2 1 0;" title="Contact avec une voiture : 449">449</span><span class="cause-seg cs2" style="flex:24.8 1 0;" title="Environnement : 148">148</span>      </div>
       <div class="hot-rate">7,52<small>par 100 km</small></div>
     </div>
     <div class="hot-row">
-      <div class="hot-name">InterlagosWEC<small>n=100 courses · 1046 incidents · dont 18 entre pilotes CDDN</small></div>
+      <div class="hot-name">InterlagosWEC<small>n=100 courses · 1046 incidents · dont 18 entre pilotes ISATIS</small></div>
       <div class="cause-bar" style="width:82.7%;" role="img" aria-label="InterlagosWEC : 7,29 incidents par 100 km, dont 931 contacts et 115 avec l'environnement">
 <span class="cause-seg cs1" style="flex:89.0 1 0;" title="Contact avec une voiture : 931">931</span><span class="cause-seg cs2" style="flex:11.0 1 0;" title="Environnement : 115">115</span>      </div>
       <div class="hot-rate">7,29<small>par 100 km</small></div>
@@ -15145,25 +15160,25 @@
       <div class="hot-rate">6,86<small>par 100 km</small></div>
     </div>
     <div class="hot-row">
-      <div class="hot-name">ImolaELMS<small>n=23 courses · 291 incidents · dont 29 entre pilotes CDDN</small></div>
+      <div class="hot-name">ImolaELMS<small>n=23 courses · 291 incidents · dont 29 entre pilotes ISATIS</small></div>
       <div class="cause-bar" style="width:72.5%;" role="img" aria-label="ImolaELMS : 6,39 incidents par 100 km, dont 216 contacts et 75 avec l'environnement">
 <span class="cause-seg cs1" style="flex:74.2 1 0;" title="Contact avec une voiture : 216">216</span><span class="cause-seg cs2" style="flex:25.8 1 0;" title="Environnement : 75">75</span>      </div>
       <div class="hot-rate">6,39<small>par 100 km</small></div>
     </div>
     <div class="hot-row">
-      <div class="hot-name">BahrainWEC<small>n=102 courses · 890 incidents · dont 1 entre pilotes CDDN</small></div>
+      <div class="hot-name">BahrainWEC<small>n=102 courses · 890 incidents · dont 1 entre pilotes ISATIS</small></div>
       <div class="cause-bar" style="width:71.4%;" role="img" aria-label="BahrainWEC : 6,29 incidents par 100 km, dont 829 contacts et 61 avec l'environnement">
 <span class="cause-seg cs1" style="flex:93.1 1 0;" title="Contact avec une voiture : 829">829</span><span class="cause-seg cs2" style="flex:6.9 1 0;" title="Environnement : 61">61</span>      </div>
       <div class="hot-rate">6,29<small>par 100 km</small></div>
     </div>
     <div class="hot-row">
-      <div class="hot-name">BahrainWEC_Outer<small>n=31 courses · 288 incidents · dont 11 entre pilotes CDDN</small></div>
+      <div class="hot-name">BahrainWEC_Outer<small>n=31 courses · 288 incidents · dont 11 entre pilotes ISATIS</small></div>
       <div class="cause-bar" style="width:70.6%;" role="img" aria-label="BahrainWEC_Outer : 6,22 incidents par 100 km, dont 251 contacts et 37 avec l'environnement">
 <span class="cause-seg cs1" style="flex:87.2 1 0;" title="Contact avec une voiture : 251">251</span><span class="cause-seg cs2" style="flex:12.8 1 0;" title="Environnement : 37">37</span>      </div>
       <div class="hot-rate">6,22<small>par 100 km</small></div>
     </div>
     <div class="hot-row">
-      <div class="hot-name">SpaWEC<small>n=51 courses · 341 incidents · dont 2 entre pilotes CDDN</small></div>
+      <div class="hot-name">SpaWEC<small>n=51 courses · 341 incidents · dont 2 entre pilotes ISATIS</small></div>
       <div class="cause-bar" style="width:65.4%;" role="img" aria-label="SpaWEC : 5,76 incidents par 100 km, dont 272 contacts et 69 avec l'environnement">
 <span class="cause-seg cs1" style="flex:79.8 1 0;" title="Contact avec une voiture : 272">272</span><span class="cause-seg cs2" style="flex:20.2 1 0;" title="Environnement : 69">69</span>      </div>
       <div class="hot-rate">5,76<small>par 100 km</small></div>
@@ -15274,7 +15289,7 @@
       </div>
     </details>
     <div class="cause-legend"><span><i class="cs1"></i>Contact avec une voiture</span><span><i class="cs2"></i>Environnement (mur, glissade)</span></div>
-    <p class="catperf-note">Triés par taux décroissant (par 100 km). Un incident entre deux pilotes CDDN compte une fois. Barres estompées : moins de 5 courses ; en dessous de 3 courses un circuit n'est pas affiché.</p>
+    <p class="catperf-note">Triés par taux décroissant (par 100 km). Un incident entre deux pilotes ISATIS compte une fois. Barres estompées : moins de 5 courses ; en dessous de 3 courses un circuit n'est pas affiché.</p>
   </div>
 
   <div class="panel" style="margin-bottom:1.1rem;">
@@ -15396,7 +15411,7 @@
   <div class="page-head">
     <p class="eyebrow">Face au pilote</p>
     <h1 class="display">Rivaux fréquents</h1>
-    <p>Les pilotes adverses que les pilotes suivis croisent le plus souvent : combien de places d'écart, quel rythme, sur quelles rencontres. Un rival apparaît à partir de 5 sessions communes dans la même classe, et seulement dans la catégorie principale du pilote, celle où il court le plus (LMP2 WEC et ELMS comptent ensemble). Les pilotes CDDN sans suivi sont de la grille, pas des rivaux.</p>
+    <p>Les pilotes adverses que les pilotes suivis croisent le plus souvent : combien de places d'écart, quel rythme, sur quelles rencontres. Un rival apparaît à partir de 5 sessions communes dans la même classe, et seulement dans la catégorie principale du pilote, celle où il court le plus (LMP2 WEC et ELMS comptent ensemble). Les pilotes ISATIS sans suivi sont de la grille, pas des rivaux.</p>
   </div>
   <aside class="note-banner" role="note"><span class="note-glyph" aria-hidden="true">i</span><div><p>Ces pilotes ne sont observés que dans les sessions où un pilote suivi était présent. Ce n'est pas leur profil complet, seulement leur profil face au pilote.</p></div></aside>
 
@@ -19216,7 +19231,7 @@
   <div class="note">
     <span class="glyph">i</span>
     <div>
-      <strong>Ce que vous regardez :</strong> le site officiel CDDN-RACING.COM, généré automatiquement depuis les fichiers de résultats du jeu Le Mans Ultimate envoyés par les pilotes suivis. Seuls les pilotes suivis sont analysés ; les autres voitures servent de grille de référence, et chaque comparaison se fait à la classe de la course. <strong>Pilotes</strong> : le profil de chaque pilote (araignée, forme, performance, fiabilité, rivaux). <strong>Équipe</strong> : les pilotes comparés entre eux. <strong>Circuits</strong> : circuit par circuit. <strong>Courses</strong> : toutes les courses et l'analyse détaillée de chacune. Un chiffre n'est publié qu'à partir de 5 courses (indicatif dès 3) ; sinon le bloc affiche sa jauge d'attente.
+      <strong>Ce que vous regardez :</strong> le site officiel d'ISATIS Esport, généré automatiquement depuis les fichiers de résultats du jeu Le Mans Ultimate envoyés par les pilotes suivis. Seuls les pilotes suivis sont analysés ; les autres voitures servent de grille de référence, et chaque comparaison se fait à la classe de la course. <strong>Pilotes</strong> : le profil de chaque pilote (araignée, forme, performance, fiabilité, rivaux). <strong>Équipe</strong> : les pilotes comparés entre eux. <strong>Circuits</strong> : circuit par circuit. <strong>Courses</strong> : toutes les courses et l'analyse détaillée de chacune. Un chiffre n'est publié qu'à partir de 5 courses (indicatif dès 3) ; sinon le bloc affiche sa jauge d'attente.
     </div>
   </div>
 
